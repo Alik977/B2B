@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{max-width: 1440px;
+    margin: auto;
+}
+/**Body**/
+body{
+    background-image: url(./pictures/Rectangle\ 10354.png);
+}
+.bodynav{
+padding: 50px 0px;
+}
+.bodylogoimage{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 100%;
+}
+.body_li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+
+}
+.body_li li{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+ 
+border: 1px solid white ;
+padding: 15px;
+border-radius: 35px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
