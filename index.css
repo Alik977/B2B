@@ -1,7 +1,7 @@
 body {
-    padding: 0;
+  padding: 0;
   margin: 0;
-  background: rgb(68,57,141);
+  background: rgb(68, 57, 141);
   font-family: "Poppins", sans-serif;
   color: white;
 }
@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 70px;
-  background: rgb(68,57,141);
+  background: rgb(68, 57, 141);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -20,20 +20,16 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 52% 550%;
- 
 }
 
 .logo {
-
-
-  color: rgb(68,57,141);
+  color: rgb(68, 57, 141);
   width: 101px;
   height: 101px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-
 }
 
 nav ul {
@@ -43,7 +39,6 @@ nav ul {
   border: 1px solid white;
   border-radius: 100px;
   padding: 20px;
-
 }
 
 nav a {
@@ -68,8 +63,6 @@ nav a {
   border-radius: 50px;
   font-size: 14px;
 }
-
-
 
 .hero {
   display: flex;
@@ -105,28 +98,122 @@ nav a {
 }
 
 .hero-btn {
- filter: opacity(15px);
-  color: rgb(68,57,141);
-  padding: 14px 36px;
-  border: none;
+  padding: 14px 46px;
+
   font-size: 18px;
   border-radius: 40px;
   margin-top: 22px;
   cursor: pointer;
+  filter: opacity(50%);
+  border: 2px solid white;
 }
-
+.hero-btn:hover{
+background-color: white;
+color: black;
+  filter: opacity(100%);
+}
 .socials {
   margin-top: 25px;
   display: flex;
   gap: 15px;
   font-size: 22px;
+  color: white;
 }
-
-
+.socials:hover img{
+    transition: all 2s;
+    transform: scale(1.1);
+}
 .hero-right .image-box {
   width: 430px;
   height: 520px;
   border-radius: 35px;
   background: linear-gradient(135deg, #5d49c7, #2c1a73);
   box-shadow: 0 0 40px #0004;
+}
+/*skide*/
+.slider-wrapper {
+  width: 650px;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0.3;
+  transform: scale(0.7);
+  filter: blur(3px);
+}
+
+.slide img {
+  width: 380px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+  z-index: 3;
+}
+
+.slide.left {
+  transform: translateX(-230px) scale(0.8);
+  opacity: 0.5;
+}
+
+.slide.right {
+  transform: translateX(230px) scale(0.8);
+  opacity: 0.5;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 320px;
+}
+.dots:hover{
+cursor: pointer;
+}
+
+.dots span {
+    
+  height: 10px;
+  width: 10px;
+  background: #bbb;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.dots .active {
+  background: white;
+}
+
+
+.slider-wrapper {
+  width: 650px;
+  height: 10px;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  transition: 0.6s ease;
+  opacity: 0.25;
+  transform: scale(0.65);
+  filter: blur(4px);
+}
+
+.slide.left,
+.slide.right {
+  opacity: 0.55;
+  filter: blur(2px);
 }
