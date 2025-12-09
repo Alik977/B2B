@@ -1,41 +1,132 @@
-*{
-    margin: 0;
+body {
     padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  background: rgb(68,57,141);
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
-.container
-{max-width: 1440px;
-    margin: auto;
+
+/* -------------------------------- NAVBAR ------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 70px;
+  background: rgb(68,57,141);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-image: url("./pictures/Topographic\ 3.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 52% 550%;
+ 
 }
-/**Body**/
-body{
-    background-image: url(./pictures/Rectangle\ 10354.png);
-}
-.bodynav{
-padding: 50px 0px;
-}
-.bodylogoimage{
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  border-radius: 100%;
-}
-.body_li a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-weight: bold;
+
+.logo {
+
+
+  color: rgb(68,57,141);
+  width: 101px;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 
 }
-.body_li li{
-        display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
- 
-border: 1px solid white ;
-padding: 15px;
-border-radius: 35px;
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 20px;
+
 }
-nav{
-    display: flex;
-    justify-content: space-between;
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right i {
+  font-size: 20px;
+}
+
+.lang {
+  padding: 8px 14px;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 120px;
+  min-height: 80vh;
+
+  background-image: url("./pictures/Topographic\ 3.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 52% 100%;
+}
+
+.hero-left {
+  max-width: 480px;
+}
+
+.hero-left h1 {
+  font-size: 80px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.hero-left h2 {
+  font-size: 52px;
+  margin: 0 0 15px;
+}
+
+.hero-left p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.hero-btn {
+ filter: opacity(15px);
+  color: rgb(68,57,141);
+  padding: 14px 36px;
+  border: none;
+  font-size: 18px;
+  border-radius: 40px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.socials {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+}
+
+
+.hero-right .image-box {
+  width: 430px;
+  height: 520px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #5d49c7, #2c1a73);
+  box-shadow: 0 0 40px #0004;
 }
