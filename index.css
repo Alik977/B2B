@@ -1,6 +1,9 @@
-body {
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body {
   background: rgb(68, 57, 141);
   font-family: "Poppins", sans-serif;
   color: white;
@@ -12,14 +15,20 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 70px;
-  background: rgb(68, 57, 141);
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 10;
-  background-image: url("./pictures/Topographic\ 3.png");
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 52% 550%;
+  background: transparent; 
+}
+.nav {
+  width: 964px;
+  height: 59px;
+  vertical-align: middle;
+}
+li a:hover{
+  background-color: white;
+  border-radius: 50px;
+color: #2c1a73;
+padding: 7px 0px 7px 0px;
 }
 
 .logo {
@@ -30,9 +39,10 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  vertical-align: middle;
 }
 
-nav ul {
+.nav ul {
   display: flex;
   list-style: none;
   gap: 40px;
@@ -41,7 +51,7 @@ nav ul {
   padding: 20px;
 }
 
-nav a {
+.nav a {
   text-decoration: none;
   color: white;
   font-size: 17px;
@@ -60,21 +70,16 @@ nav a {
 .lang {
   padding: 8px 14px;
   border: 1px solid white;
-  border-radius: 50px;
+  border-radius: 100px;
   font-size: 14px;
 }
 
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 120px;
-  min-height: 80vh;
-
-  background-image: url("./pictures/Topographic\ 3.png");
+  min-height: 100vh;
+  background-image: url(./pictures/Topographic\ 3.png);
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 52% 100%;
+  background-size: 55% 100%;
 }
 
 .hero-left {
@@ -107,9 +112,9 @@ nav a {
   filter: opacity(50%);
   border: 2px solid white;
 }
-.hero-btn:hover{
-background-color: white;
-color: black;
+.hero-btn:hover {
+  background-color: white;
+  color: black;
   filter: opacity(100%);
 }
 .socials {
@@ -119,13 +124,14 @@ color: black;
   font-size: 22px;
   color: white;
 }
-.socials:hover img{
-    transition: all 2s;
-    transform: scale(1.1);
+.socials:hover img {
+  transition: all 2s;
+  transform: scale(1.1);
 }
 .hero-right .image-box {
   width: 430px;
   height: 520px;
+
   border-radius: 35px;
   background: linear-gradient(135deg, #5d49c7, #2c1a73);
   box-shadow: 0 0 40px #0004;
@@ -134,6 +140,7 @@ color: black;
 .slider-wrapper {
   width: 650px;
   position: relative;
+  padding: 255px 0;
 }
 
 .slider {
@@ -179,12 +186,11 @@ color: black;
   text-align: center;
   margin-top: 320px;
 }
-.dots:hover{
-cursor: pointer;
+.dots:hover {
+  cursor: pointer;
 }
 
 .dots span {
-    
   height: 10px;
   width: 10px;
   background: #bbb;
@@ -196,7 +202,6 @@ cursor: pointer;
 .dots .active {
   background: white;
 }
-
 
 .slider-wrapper {
   width: 650px;
@@ -216,4 +221,10 @@ cursor: pointer;
 .slide.right {
   opacity: 0.55;
   filter: blur(2px);
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
 }
