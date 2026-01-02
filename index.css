@@ -461,3 +461,29 @@ li a:hover {
   grid-column: 5 / 9;
   grid-row: 5/ 6;
 }
+.box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.function{
+  padding: 71px 0px 0px 121px;
+}
+.function p{
+  width: 877px;
+  height: 93px;
+  font-size: 20px;
+  padding: 30px 0px;
+}
+.function h2{
+  font-size: 32px;
+
+}
+.function_box{
+   background-image: url(./pictures/Topographic\ 3.png);
+   background-size: cover;
+}
