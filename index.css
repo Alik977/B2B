@@ -365,7 +365,10 @@ li a:hover {
   justify-content: space-around;
 }
 
-.portgolioh1 { font-size: 32px; font-weight: bold; }
+.portgolioh1 {
+  font-size: 32px;
+  font-weight: bold;
+}
 
 /* Վերնամաս */
 .porfolio {
@@ -421,7 +424,7 @@ li a:hover {
 }
 .box1 {
   grid-column: 1 / 5;
-  grid-row: 1 /3 ;
+  grid-row: 1 /3;
 }
 
 .box2 {
@@ -441,11 +444,8 @@ li a:hover {
 
 .box5 {
   grid-column: 5 / 9;
-  grid-row: 4
-  3/ 6;
+  grid-row: 4 3/ 6;
 }
-
-
 
 .box7 {
   grid-column: 1 / 3;
@@ -467,23 +467,75 @@ li a:hover {
 
 .box:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.function{
+.function {
   padding: 71px 0px 0px 121px;
 }
-.function p{
+.function p {
   width: 877px;
   height: 93px;
   font-size: 20px;
   padding: 30px 0px;
 }
-.function h2{
+.function h2 {
   font-size: 32px;
-
 }
-.function_box{
-   background-image: url(./pictures/Topographic\ 3.png);
-   background-size: cover;
+.function_box {
+  background-image: url(./pictures/Topographic\ 3.png);
+  background-size: cover;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  position: relative;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 45%;
+}
+
+.service-item img {
+  width: 1440px;
+  height: 1393px;
+  padding: 23px 0px 0px 110px;
+}
+
+.service-item_name {
+  font-size: 32px;
+  font-weight: 500;
+  font-weight: bold;
+  padding: 71px 449px 0px 130px;
+  position: absolute;
+  top: 150px;
+  left: 120px;
+}
+.service-item_logo{
+  font-size: 32px;
+  font-weight: 500;
+  font-weight: bold;
+  position: absolute;
+  top: 380px;
+  left: 500px;
+}
+.service-item_brend{
+  font-size: 32px;
+  font-weight: 500;
+  font-weight: bold;
+  position: absolute;
+  top: 580px;
+  left: 170px;
+}
+.service-item_pack{
+   font-size: 32px;
+  font-weight: 500;
+  font-weight: bold;
+  position: absolute;
+  top: 650px;
+  left: 970px;
 }
