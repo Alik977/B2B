@@ -513,7 +513,7 @@ li a:hover {
   padding: 71px 449px 0px 130px;
   position: absolute;
   top: 150px;
-  left: 120px;
+  left:60px;
 }
 .service-item_logo{
   font-size: 32px;
@@ -521,7 +521,7 @@ li a:hover {
   font-weight: bold;
   position: absolute;
   top: 380px;
-  left: 500px;
+  left: 450px;
 }
 .service-item_brend{
   font-size: 32px;
@@ -529,7 +529,7 @@ li a:hover {
   font-weight: bold;
   position: absolute;
   top: 580px;
-  left: 170px;
+  left: 185px;
 }
 .service-item_pack{
    font-size: 32px;
@@ -537,7 +537,7 @@ li a:hover {
   font-weight: bold;
   position: absolute;
   top: 650px;
-  left: 970px;
+  left: 905px;
 }
 .service-item_bigbrend{
     font-size: 32px;
@@ -545,7 +545,8 @@ li a:hover {
   font-weight: bold;
   position: absolute;
   top: 900px;
-  left: 70px;
+  left: 390px;
+  width: 480px;
 }
 .service-item_UI{
   font-size: 32px;
@@ -553,5 +554,5 @@ li a:hover {
   font-weight: bold;
   position: absolute;
   top: 1100px;
-  left: 1050px;
+  left: 980px;
 }
