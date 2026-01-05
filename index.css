@@ -539,3 +539,19 @@ li a:hover {
   top: 650px;
   left: 970px;
 }
+.service-item_bigbrend{
+    font-size: 32px;
+  font-weight: 500;
+  font-weight: bold;
+  position: absolute;
+  top: 900px;
+  left: 70px;
+}
+.service-item_UI{
+  font-size: 32px;
+  font-weight: 500;
+  font-weight: bold;
+  position: absolute;
+  top: 1100px;
+  left: 1050px;
+}
