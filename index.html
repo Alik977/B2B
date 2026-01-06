@@ -7,11 +7,26 @@
     <link rel="icon" href="./pictures/logo.png" />
     <link
       rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
     <script src="./js/script.js" defer></script>
     <script src="./js/script1.js" defer></script>
     <script src="./js/script3.js" defer></script>
+    <script src="./js/script-map.js"></script>
   </head>
   <body>
     <section class="hero">
@@ -301,8 +316,12 @@
               <h2>Կոնտակտային Տվյալներ</h2>
               <p>Հասցե․</p>
               <address>
-                <a href="https://www.google.com/maps/place/Guyn.am/@40.2260835,44.4728511,16.5z/data=!4m14!1m7!3m6!1s0x406a97e21f14be39:0xf496189331aac7df!2sGuyn.am!8m2!3d40.227211!4d44.4727429!16s%2Fg%2F11l5sl5_z5!3m5!1s0x406a97e21f14be39:0xf496189331aac7df!8m2!3d40.227211!4d44.4727429!16s%2Fg%2F11l5sl5_z5?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">ՀՀ, Կոտայքի մարզ, գ Քասախ, Վահան Տերյանի 13-րդ փողոց տուն 1</a>
-                
+                <a
+                  href="https://www.google.com/maps/place/Guyn.am/@40.2260835,44.4728511,16.5z/data=!4m14!1m7!3m6!1s0x406a97e21f14be39:0xf496189331aac7df!2sGuyn.am!8m2!3d40.227211!4d44.4727429!16s%2Fg%2F11l5sl5_z5!3m5!1s0x406a97e21f14be39:0xf496189331aac7df!8m2!3d40.227211!4d44.4727429!16s%2Fg%2F11l5sl5_z5?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >ՀՀ, Կոտայքի մարզ, գ Քասախ, Վահան Տերյանի 13-րդ փողոց տուն
+                  1</a
+                >
               </address>
               <p>Հեռ․</p>
               <div class="tel">
@@ -312,12 +331,78 @@
               </div>
               <p>Էլ․հասցե</p>
               <div class="telmail">
-                <a href="mailto:infoBtoBDesign.am@gmail.com"> infoBtoBDesign.am@gmail.com</a>
+                <a href="mailto:infoBtoBDesign.am@gmail.com">
+                  infoBtoBDesign.am@gmail.com</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section>
+      <div class="maps"><div id="map"></div></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="./pictures/logo.png" alt="BtoB Design" />
+          </div>
+          <h3>BtoB Design Agency</h3>
+          <p class="footer-desc">Դիզայն, որը ձևավորում է հաջողությունը</p>
+
+          <div class="footer-socials">
+            <a
+              href="https://www.shutterstock.com/image-vector/connection-problem-concept-404-error-260nw-2308057387.jpg"
+              target="_blank"
+              ><img src="./pictures/facebook.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com/btob.am/" target="_blank"
+              ><img src="./pictures/instagram.png" alt=""
+            /></a>
+            <a
+              href="https://www.shutterstock.com/image-vector/connection-problem-concept-404-error-260nw-2308057387.jpg"
+              target="_blank"
+              ><img src="./pictures/linkedin.png" alt=""
+            /></a>
+            <a href="https://www.tiktok.com/@b2b.design.studio" target="_blank"
+              ><img src="./pictures/tik_tok.png" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Մենյու</h4>
+          <ul>
+            <li><a href="#">Գլխավոր</a></li>
+            <li><a href="#">Մեր մասին</a></li>
+            <li><a href="#">Ծառայություններ</a></li>
+            <li><a href="#">Պորտֆոլիո</a></li>
+            <li><a href="#">Կապ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Կապ մեզ հետ</h4>
+          <p>info@BtoB.am</p>
+          <p>(+374) 94 50 50 80</p>
+          <p>
+            ՀՀ, Կոտայքի մարզ,<br />
+            գ․ Քասախ, Վահան Տերյան 13
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Աշխատանքային ժամեր</h4>
+          <p>Երկուշաբթի - Ուրբաթ</p>
+          <p>08:30 - 17:30</p>
+        </div>
+      </div>
+      <div class="footerdown">
+        <hr />
+        <div class="downfooter"><p>© 2025 BtoB.am Բոլոր իրավունքները պաշտպանված են։</p></div>
+      </div>
+    </footer>
   </body>
 </html>
