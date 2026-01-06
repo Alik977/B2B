@@ -589,3 +589,46 @@ li a:hover {
   padding: 25px;
   flex-shrink: 0;
 }
+.callme{
+  padding: 32px 0px 0px 120px;
+}
+.forma{
+background-color: rgba(120, 112, 172, 1);
+width: 750px;
+height: 719px;
+border: 1px solid white;
+border-radius: 25px;
+
+}
+.formcall{
+  padding: 129px 345px 0px 445px;
+}
+.callinfo h2{
+  margin: auto;
+  text-align: center;
+  padding: 70px 128px ;
+}
+.callinfo p{
+  color: #ffbe26;
+  font-size:32px ;
+  font-weight: bold;
+  text-align: center;
+  padding: 67px 0px 2px 0px;
+}
+.callinfo address{
+  text-align: center;
+  margin: auto;
+ width: 423px;
+ font-size: 24px;
+}
+
+  .tel{
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+  }
+  .telmail{
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+  }
