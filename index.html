@@ -26,13 +26,14 @@
     <script src="./js/script.js" defer></script>
     <script src="./js/script1.js" defer></script>
     <script src="./js/script3.js" defer></script>
-    <script src="./js/script-map.js"></script>
+    <script src="./js/script-map.js" defer></script>
+    <script src="./js/burger.js" defer></script>
   </head>
   <body>
     <section class="hero">
       <header class="navbar">
         <div class="logo">
-          <img src="./pictures/logo.png" alt="" />
+          <a href="./index.html"><img src="./pictures/logo.png" alt="" /></a>
         </div>
 
         <nav class="nav">
@@ -47,11 +48,26 @@
         </nav>
 
         <div class="nav-right">
-          <i class="fa-solid fa-search"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
           <div class="lang">Հայ</div>
+
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </header>
-
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
+          <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
+          <li><a href="#">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
+          <li><a href="#">ՊՈՐՏՖՈԼԻՈ</a></li>
+          <li><a href="#">ԲԼՈԳ</a></li>
+          <li><a href="#">ԿԱՊ</a></li>
+        </ul>
+      </div>
       <main class="hero-content">
         <div class="hero-left">
           <img src="./pictures/BtoB Design Agency.png" alt="" />
@@ -153,10 +169,7 @@
             <div class="step white active">
               <span class="num">02</span>
               <h3>Մասնագիտական<br />Խորհրդատվություն</h3>
-              <p>
-                Ձեր բիզնեսին համապատասխան լուծումների առաջարկում և ռազմավարական
-                ուղղորդում։
-              </p>
+              <p></p>
             </div>
 
             <div class="step yellow">
@@ -375,8 +388,8 @@
         <div class="footer-col">
           <h4>Մենյու</h4>
           <ul>
-            <li><a href="#">Գլխավոր</a></li>
-            <li><a href="#">Մեր մասին</a></li>
+            <li><a href="./index.html">Գլխավոր</a></li>
+            <li><a href="./about.html">Մեր մասին</a></li>
             <li><a href="#">Ծառայություններ</a></li>
             <li><a href="#">Պորտֆոլիո</a></li>
             <li><a href="#">Կապ</a></li>
@@ -401,7 +414,9 @@
       </div>
       <div class="footerdown">
         <hr />
-        <div class="downfooter"><p>© 2025 BtoB.am Բոլոր իրավունքները պաշտպանված են։</p></div>
+        <div class="downfooter">
+          <p>© 2025 BtoB.am Բոլոր իրավունքները պաշտպանված են։</p>
+        </div>
       </div>
     </footer>
   </body>

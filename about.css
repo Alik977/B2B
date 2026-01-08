@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.container{
+  max-width: 1440px;
+  margin: auto;
+}
 body {
   background: rgb(68, 57, 141);
   font-family: "Poppins", sans-serif;
@@ -106,7 +110,7 @@ height: 180vh;
    
 }
 .about_blok h2{
-    padding: 81px 0px 0px 170px;
+    padding: 101px 0px 0px 170px;
     font-size: 32px;
 }
 .footer {
@@ -208,7 +212,7 @@ padding: 35px;
   padding: 6px;
 }
 .steps {
-  padding: 80px 120px;
+  padding: 100px 120px;
   background: rgb(68, 57, 141);
 }
 
@@ -221,7 +225,7 @@ padding: 35px;
 .card {
   height: 299px;
   border-radius: 22px;
-  padding: 28px;
+  padding: 50px;
   position: relative;
 
 }
