@@ -415,6 +415,9 @@ li a:hover {
   margin: 0 auto;
   padding: 40px 0;
 }
+.gridbox img {
+  transition: opacity 0.3s ease;
+}
 
 .box img {
   width: 100%;
@@ -843,7 +846,7 @@ li a:hover {
   }
   .slider-wrapper {
     width: 100%;
-    padding: 60px 0;
+    padding: 200px 0;
   }
 
   .slide img {
@@ -881,7 +884,10 @@ li a:hover {
     width: 100%;
     padding: 20px;
   }
-
+.function p{
+width: 300px;
+align-items: center;
+}
   .step {
     min-width: 220px;
     height: 260px;
@@ -898,6 +904,7 @@ li a:hover {
   }
   .services {
     flex-direction: column;
+    width: 50%;
   }
 
   .service-item img {
