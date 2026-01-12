@@ -1,56 +1,67 @@
-const langBtn = document.getElementById("langToggle");
+document.addEventListener("DOMContentLoaded", () => {
+  const langBtn = document.getElementById("langToggle");
 
-let currentLang = "hy";
+  let currentLang = localStorage.getItem("lang") || "hy";
 
-const translations = {
-  hy: {
-    home: "ԳԼԽԱՎՈՐ",
-    about: "ՄԵՐ ՄԱՍԻՆ",
-    services: "ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ",
-    portfolio: "ՊՈՐՏՖՈԼԻՈ",
-    blog: "ԲԼՈԳ",
-    contact: "ԿԱՊ",
-    heroText:
-      "Մենք ստեղծագործական դիզայն գործակալություն ենք, որը համագործակցում է բիզնեսների հետ։",
-    more: "Ավելին",
-  },
-  en: {
-    home: "HOME",
-    about: "ABOUT US",
-    services: "SERVICES",
-    portfolio: "PORTFOLIO",
-    blog: "BLOG",
-    contact: "CONTACT",
-    heroText:
-      "We are a creative design agency working with businesses worldwide.",
-    more: "Learn More",
-  },
-};
+  const translations = {
+    hy: {
+      home: "ԳԼԽԱՎՈՐ",
+      about: "ՄԵՐ ՄԱՍԻՆ",
+      services: "ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ",
+      portfolio: "ՊՈՐՏՖՈԼԻՈ",
+      blog: "ԲԼՈԳ",
+      contact: "ԿԱՊ",
+      heroText: "Մենք ստեղծագործական դիզայն գործակալություն ենք, որը համագործակցում է բիզնեսների հետ՝ ձևավորելով նրանց բրենդային ինքնությունը։",
+      more: "Ավելին",
+      aboutTitle: "ՄԵՐ ՄԱՍԻՆ",
+      aboutText: "Մենք ստեղծագործական դիզայն գործակալություն ենք, որը համագործակցում է բիզնեսների հետ՝ ստեղծելով ռազմավարական և վիզուալ լուծումներ։",
+      portfolioTitle: "ՊՈՐՏՖՈԼԻՈ",
+      seeMore: "Տեսնել Ավելին",
+      servicesTitle: "ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ",
+      servicesText: "Ձեր բրենդը արժանի է ավելիին։ Ընտրեք ծառայությունը, որը կբարձրացնի ձեր ազդեցությունը։",
+      customers: "ՄԵՐ ՀԱՃԱԽՈՐԴՆԵՐԸ",
+      contactTitle: "ԿԱՊ",
+      contactInfo: "Կոնտակտային Տվյալներ",
+      address: "Հասցե",
+      workHours: "Աշխատանքային ժամեր",
+    },
+    en: {
+      home: "HOME",
+      about: "ABOUT US",
+      services: "SERVICES",
+      portfolio: "PORTFOLIO",
+      blog: "BLOG",
+      contact: "CONTACT",
+      heroText: "We are a creative design agency working with businesses to build strong brand identities.",
+      more: "Learn More",
+      aboutTitle: "ABOUT US",
+      aboutText: "We are a creative design agency providing strategic and visual solutions for businesses.",
+      portfolioTitle: "PORTFOLIO",
+      seeMore: "See More",
+      servicesTitle: "SERVICES",
+      servicesText: "Your brand deserves more. Choose the service that elevates your impact.",
+      customers: "OUR CLIENTS",
+      contactTitle: "CONTACT",
+      contactInfo: "Contact Information",
+      address: "Address",
+      workHours: "Working Hours",
+    },
+  };
 
-const navLinks = document.querySelectorAll(".nav ul li a");
-const heroParagraph = document.querySelector(".hero-left p");
-const heroBtn = document.querySelector(".hero-btn");
-
-function changeLanguage(lang) {
-  navLinks[0].textContent = translations[lang].home;
-  navLinks[1].textContent = translations[lang].about;
-  navLinks[2].textContent = translations[lang].services;
-  navLinks[3].textContent = translations[lang].portfolio;
-  navLinks[4].textContent = translations[lang].blog;
-  navLinks[5].textContent = translations[lang].contact;
-
-  heroParagraph.textContent = translations[lang].heroText;
-  heroBtn.textContent = translations[lang].more;
-}
-
-langBtn.addEventListener("click", () => {
-  if (currentLang === "hy") {
-    currentLang = "en";
-    langBtn.textContent = "EN";
-  } else {
-    currentLang = "hy";
-    langBtn.textContent = "Հայ";
+  function changeLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) el.textContent = translations[lang][key];
+    });
   }
 
   changeLanguage(currentLang);
+  langBtn.textContent = currentLang === "hy" ? "Հայ" : "EN";
+
+  langBtn.addEventListener("click", () => {
+    currentLang = currentLang === "hy" ? "en" : "hy";
+    localStorage.setItem("lang", currentLang);
+    langBtn.textContent = currentLang === "hy" ? "Հայ" : "EN";
+    changeLanguage(currentLang);
+  });
 });

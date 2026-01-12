@@ -9,13 +9,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="./js/burger.js" defer></script>
     <title>Մեր Մասին</title>
   </head>
   <body>
     <section class="hero">
       <header class="navbar">
         <div class="logo">
-         <a href="./index.html"><img src="./pictures/logo.png" alt="" /></a> 
+          <a href="./index.html"><img src="./pictures/logo.png" alt="" /></a>
         </div>
 
         <nav class="nav">
@@ -30,10 +31,29 @@
         </nav>
 
         <div class="nav-right">
-          <i class="fa-solid fa-search"></i>
-          <div class="lang">Հայ</div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="lang" id="langToggle">Հայ</div>
+
+          
         </div>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
       </header>
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
+          <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
+          <li><a href="#">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
+          <li><a href="./service.html">ՊՈՐՏՖՈԼԻՈ</a></li>
+          <li><a href="#">ԲԼՈԳ</a></li>
+          <li><a href="#">ԿԱՊ</a></li>
+        </ul>
+      </div>
+      </header>
+
       <section class="about_blok">
         <h1>ՄԵՐ ՄԱՍԻՆ</h1>
         <p>
@@ -84,7 +104,6 @@
         <div class="card yellow">
           <span class="num">02</span>
           <h3>Ստեղծագործական մտածողություն</h3>
-          
         </div>
 
         <div class="card yellow">
@@ -143,7 +162,7 @@
         </div>
       </div>
     </section>
-    <hr>
+    <hr />
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
