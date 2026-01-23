@@ -270,6 +270,9 @@ li a:hover {
   justify-content: space-between;
   padding: 20px 120px 0px 0px;
 }
+.right_about a{
+  color: #6a5acd;
+}
 .hero-btn1 {
   padding: 14px 46px;
 
