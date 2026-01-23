@@ -1,19 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="hy">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="service.css" />
+    <title>BtoB Design</title>
+    <link rel="stylesheet" href="procesing.css" />
     <link rel="icon" href="./pictures/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <script src="./js/filter_logo.js" defer></script>
-        <script src="./js/burger.js" defer></script>
+    <script src="./js/burger.js" defer></script>
     <script src="./js/language.js" defer></script>
-
-    <title>Պորտֆոլիո</title>
   </head>
   <body>
     <section class="hero">
@@ -26,7 +32,7 @@
           <ul>
             <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
             <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
-            <li><a href="./procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
+            <li><a href="/procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
             <li><a href="./service.html">ՊՈՐՏՖՈԼԻՈ</a></li>
             <li><a href="#">ԲԼՈԳ</a></li>
             <li><a href="#">ԿԱՊ</a></li>
@@ -48,54 +54,52 @@
         <ul>
           <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
           <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
-          <li><a href="./procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
+          <li><a href="/procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
           <li><a href="./service.html">ՊՈՐՏՖՈԼԻՈ</a></li>
           <li><a href="#">ԲԼՈԳ</a></li>
           <li><a href="#">ԿԱՊ</a></li>
         </ul>
       </div>
     </section>
-
-    <section class="portfolio">
-      <h1>Պորտֆոլիո</h1>
-      <p>
-        Մեր աշխատանքները ներկայացնում են մեր փորձը, մեր մոտեցումը և մեր կատարած
-        յուրաքանչյուր նախագծի նկատմամբ ունեցած պատասխանատվությունը։
-      </p>
-
-      <div class="filters">
-        <button data-category="packaging" class="active">Փաթեթավորում</button>
-        <button data-category="branding">Բրենդավորում</button>
-        <button data-category="rebranding">Վերաբրենդավորում</button>
-        <button data-category="naming">Անվանակոչում</button>
-        <button data-category="logo">Լոգոյի Դիզայն</button>
-        <button data-category="UI">UI/UX Դիզայն</button>
+    <section class="process1">
+      <div class="process">
+        <h1>Ծառայություններ</h1>
+        <p>
+          Մեր ծառայությունները ստեղծված են՝ օգնելու բիզնեսներին աճել,առանձնանալ
+          և կառուցել վստահելի բրենդային ներկայություն։
+        </p>
       </div>
 
-      <div class="portfolio-grid">
-        <div class="slot a"><img /></div>
-        <div class="slot b"><img /></div>
-        <div class="slot c"><img /></div>
-
-        <div class="slot d"><img /></div>
-        <div class="slot e"><img /></div>
-
-        <div class="slot g"><img /></div>
-        <div class="slot h"><img /></div>
-        <div class="slot f"><img /></div>
-
-        <div class="slot i"><img /></div>
-        <div class="slot j"><img /></div>
-        <div class="slot n"><img /></div>
-        <div class="slot k"><img /></div>
-        <div class="slot l"><img /></div>
-        <div class="slot m"><img /></div>
-
-        <div class="slot o"><img /></div>
-        <div class="slot p"><img /></div>
+      <div class="services">
+        <div class="service-item">
+          <img src="./pictures/Group.png" alt="" />
+        </div>
+        <div class="service-item_name">
+          <p><img src="./pictures/Ellipse 162.png" alt="" /> ԱՆՎԱՆԱԿՈՉՈՒՄ</p>
+        </div>
+        <div class="service-item_logo">
+          <img src="./pictures/Ellipse 162.png" alt="" />
+          <p>ԼՈԳՈՅԻ ԴԻԶԱՅՆ</p>
+        </div>
+        <div class="service-item_brend">
+          <p>ԲՐԵՆԴԱՎՈՐՈՒՄ <img src="./pictures/Ellipse 162.png" alt="" /></p>
+        </div>
+        <div class="service-item_pack">
+          <img src="./pictures/Ellipse 162.png" alt="" />
+          <p>ՓԱԹԵԹԱՎՈՐՈՒՄ</p>
+        </div>
+        <div class="service-item_bigbrend">
+          <p>
+            ՎԵՐԱԲՐԵՆԴԱՎՈՐՈՒՄ ԵՎ
+            <img src="./pictures/Ellipse 162.png" alt="" />ՎԵՐԱՁԵԱՎՈՐՈՒՄ
+          </p>
+        </div>
+        <div class="service-item_UI">
+          <img src="./pictures/Ellipse 162.png" alt="" />
+          <p>UI/UX ԴԻԶԱՅՆ</p>
+        </div>
       </div>
     </section>
-
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
