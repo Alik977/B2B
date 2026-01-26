@@ -19,10 +19,10 @@ a {
 /* -------------------------------- NAVBAR ------------------------------- */
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   align-items: center;
-  padding: 25px 70px;
+  padding: 25px 70px ;
   position: relative;
   z-index: 10;
   background: transparent;
@@ -31,6 +31,12 @@ a {
   width: 964px;
   height: 59px;
   vertical-align: middle;
+}
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+ 
 }
 li a:hover {
   background-color: white;

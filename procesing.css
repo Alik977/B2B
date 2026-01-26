@@ -15,10 +15,10 @@ a {
 /* -------------------------------- NAVBAR ------------------------------- */
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   align-items: center;
-  padding: 25px 70px;
+  padding: 25px 70px ;
   position: relative;
   z-index: 10;
   background: transparent;
@@ -45,7 +45,12 @@ li a:hover {
   border-radius: 20px;
   vertical-align: middle;
 }
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
 
+}
 .nav ul {
   display: flex;
   list-style: none;
