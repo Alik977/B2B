@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="hy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Կապ մեզ հետ</title>
+    <link rel="stylesheet" href="./call.css" />
+    <script src="./js/call.js" defer></script>
+    <script src="./js/script-map.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/language.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <section class="hero">
+      <header class="navbar">
+        <div class="logo">
+          <a href="./index.html"><img src="./pictures/logo.png" alt="" /></a>
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
+            <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
+            <li><a href="./procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
+            <li><a href="./service.html">ՊՈՐՏՖՈԼԻՈ</a></li>
+            <li><a href="./blog.html">ԲԼՈԳ</a></li>
+            <li><a href="call.html">ԿԱՊ</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-right">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="lang" id="langToggle">Հայ</div>
+
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
+          <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
+          <li><a href="./procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
+          <li><a href="./service.html">ՊՈՐՏՖՈԼԻՈ</a></li>
+          <li><a href="./blog.html">ԲԼՈԳ</a></li>
+          <li><a href="./call.html">ԿԱՊ</a></li>
+        </ul>
+      </div>
+    </section>
+     <a href="#top"
+          ><img src="./pictures/up-arrow.png" alt="" class="totop"
+        /></a>
+    <!-- CONTACT INFO -->
+    <section class="contact-info">
+      <h1>Կապ մեզ հետ</h1>
+
+      <div class="info-card">
+        <h3>Կոնտակտային տվյալներ</h3>
+
+        <p class="label">Հասցե</p>
+        <p>ՀՀ, Կոտայքի մարզ, գ Քասախ, Վահան Տերյանի 13-րդ փողոց տուն 1</p>
+
+        <p class="label">Հեռ.</p>
+        <p>(+374) 94 50 50 80<br />(+374) 99 35 35 75</p>
+
+        <p class="label">Էլ․ հասցե</p>
+        <p>infoBtoBDesign.am@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section">
+      <h2>Թողնել հաղորդագրություն</h2>
+
+      <form id="contactForm">
+        <div class="row">
+          <input type="text" placeholder="Ձեր անունը" required />
+          <input type="email" placeholder="Էլ․ հասցե" required />
+        </div>
+
+        <div class="row">
+          <input type="text" placeholder="Հեռախոսահամար" />
+          <input type="text" placeholder="Թեմա" />
+        </div>
+
+        <textarea placeholder="Ձեր հաղորդագրությունը"></textarea>
+
+        <button type="submit">Ուղարկել</button>
+      </form>
+    </section>
+
+    <!-- MAP -->
+    <div class="maps"><div id="map"></div></div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 BtoB Design Agency</p>
+    </footer>
+  </body>
+</html>
