@@ -12,6 +12,15 @@ a {
   color: white;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+.totop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+}
 /* -------------------------------- NAVBAR ------------------------------- */
 .navbar {
   display: flex;
@@ -564,6 +573,9 @@ li a:hover {
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
+}
+.callicon{
+  width: 22px;
 }
 @media (max-width: 768px) {
   .blogtable {

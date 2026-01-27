@@ -12,6 +12,15 @@ a {
   color: white;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+.totop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+}
 /* -------------------------------- NAVBAR ------------------------------- */
 .navbar {
   display: flex;
@@ -104,6 +113,9 @@ nav a {
   width: 1167px;
   height: 155px;
   font-size: 20px;
+}
+.callicon{
+  width: 22px;
 }
 nav a.active {
   opacity: 1;

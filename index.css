@@ -23,6 +23,16 @@ a {
   z-index: 10;
   background: transparent;
 }
+html {
+  scroll-behavior: smooth;
+}
+.totop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+}
+
 .nav {
   width: 964px;
   height: 59px;
@@ -41,6 +51,7 @@ li a:hover {
   padding: 10px;
   font-weight: bold;
 }
+
 
 .logo {
   width: 101px;
@@ -746,6 +757,9 @@ li a:hover {
 }
 .downfooter {
   padding: 6px;
+}
+.callicon{
+  width: 22px;
 }
 /* ---------------- BURGER MENU ---------------- */
 

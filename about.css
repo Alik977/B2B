@@ -16,6 +16,15 @@ a {
   color: white;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+.totop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+}
 /* -------------------------------- NAVBAR ------------------------------- */
 .navbar {
   display: flex;
@@ -216,6 +225,9 @@ padding: 35px;
 }
 .downfooter{
   padding: 6px;
+}
+.callicon{
+  width: 22px;
 }
 .steps {
   padding: 100px 120px;
