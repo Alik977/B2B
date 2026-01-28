@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Կապ մեզ հետ</title>
     <link rel="stylesheet" href="./call.css" />
+    <link rel="icon" href="./pictures/logo.png" />
     <script src="./js/call.js" defer></script>
     <script src="./js/script-map.js" defer></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       defer
     ></script>
     <script src="./js/burger.js" defer></script>
+    <script src="./js/language.js" defer></script>
     <script src="./js/language.js" defer></script>
   </head>
   <body>
@@ -59,55 +69,135 @@
           <li><a href="./call.html">ԿԱՊ</a></li>
         </ul>
       </div>
-    </section>
-     <a href="#top"
-          ><img src="./pictures/up-arrow.png" alt="" class="totop"
-        /></a>
-    <!-- CONTACT INFO -->
-    <section class="contact-info">
-      <h1>Կապ մեզ հետ</h1>
+      <a href="#top"
+        ><img src="./pictures/up-arrow.png" alt="" class="totop"
+      /></a>
+      <!-- CONTACT INFO -->
+      <section class="contact-info">
+        <h1>Կապ մեզ հետ</h1>
 
-      <div class="info-card">
-        <h3>Կոնտակտային տվյալներ</h3>
+        <div class="info-card">
+          <h3>Կոնտակտային տվյալներ</h3>
 
-        <p class="label">Հասցե</p>
-        <p>ՀՀ, Կոտայքի մարզ, գ Քասախ, Վահան Տերյանի 13-րդ փողոց տուն 1</p>
+          <p class="label">Հասցե</p>
+          <p>ՀՀ, Կոտայքի մարզ, գ Քասախ, Վահան Տերյանի 13-րդ փողոց տուն 1</p>
 
-        <p class="label">Հեռ.</p>
-        <p>(+374) 94 50 50 80<br />(+374) 99 35 35 75</p>
+          <p class="label">Հեռ.</p>
+          <p>(+374) 94 50 50 80<br />(+374) 99 35 35 75</p>
 
-        <p class="label">Էլ․ հասցե</p>
-        <p>infoBtoBDesign.am@gmail.com</p>
-      </div>
-    </section>
-
-    <!-- FORM -->
-    <section class="form-section">
-      <h2>Թողնել հաղորդագրություն</h2>
-
-      <form id="contactForm">
-        <div class="row">
-          <input type="text" placeholder="Ձեր անունը" required />
-          <input type="email" placeholder="Էլ․ հասցե" required />
+          <p class="label">Էլ․ հասցե</p>
+          <p>infoBtoBDesign.am@gmail.com</p>
         </div>
+      </section>
 
-        <div class="row">
-          <input type="text" placeholder="Հեռախոսահամար" />
-          <input type="text" placeholder="Թեմա" />
+      <!-- FORM -->
+      <section class="form-section">
+        <h2>Թողնել հաղորդագրություն</h2>
+
+       <form
+  action="mailto:infoBtoBDesign.am@gmail.com"
+  method="post"
+  enctype="text/plain"
+>
+  <div class="row">
+    <input type="text" name="name" placeholder="Ձեր անունը" required />
+    <input type="email" name="email" placeholder="Էլ․ հասցե" required />
+  </div>
+
+  <div class="row">
+    <input
+      type="text"
+      name="phone"
+      placeholder="Հեռախոսահամար"
+      required
+    />
+    <input type="text" name="subject" placeholder="Թեմա" required />
+  </div>
+
+  <textarea
+    name="message"
+    placeholder="Ձեր հաղորդագրությունը"
+    required
+  ></textarea>
+
+  <button type="submit">Ուղարկել</button>
+</form>
+
+      </section>
+
+      <!-- MAP -->
+      <div class="maps"><div id="map"></div></div>
+<hr>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img src="./pictures/logo.png" alt="BtoB Design" />
+            </div>
+            <h3>BtoB Design Agency</h3>
+            <p class="footer-desc">Դիզայն, որը ձևավորում է հաջողությունը</p>
+
+            <div class="footer-socials">
+              <a
+                href="https://www.shutterstock.com/image-vector/connection-problem-concept-404-error-260nw-2308057387.jpg"
+                target="_blank"
+                ><img src="./pictures/facebook.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/btob.am/" target="_blank"
+                ><img src="./pictures/instagram.png" alt=""
+              /></a>
+              <a
+                href="https://www.shutterstock.com/image-vector/connection-problem-concept-404-error-260nw-2308057387.jpg"
+                target="_blank"
+                ><img src="./pictures/linkedin.png" alt=""
+              /></a>
+              <a
+                href="https://www.tiktok.com/@btob.design.agency"
+                target="_blank"
+                ><img src="./pictures/tik_tok.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Մենյու</h4>
+            <ul>
+              <li><a href="./index.html">Գլխավոր</a></li>
+              <li><a href="./about.html">Մեր մասին</a></li>
+              <li><a href="./procesing.html">Ծառայություններ</a></li>
+              <li><a href="./service.html">Պորտֆոլիո</a></li>
+              <li><a href="./call.html">Կապ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Կապ մեզ հետ</h4>
+            <p>info@BtoB.am</p>
+            <p>
+              (+374) 94 50 50 80
+              
+              <img src="./pictures/whatsapp.png" alt="" class="callicon" />
+            </p>
+            <p>
+              ՀՀ, Կոտայքի մարզ,<br />
+              գ․ Քասախ, Վահան Տերյան 13
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Աշխատանքային ժամեր</h4>
+            <p>Երկուշաբթի - Ուրբաթ</p>
+            <p>09:00 - 18:00</p>
+          </div>
         </div>
-
-        <textarea placeholder="Ձեր հաղորդագրությունը"></textarea>
-
-        <button type="submit">Ուղարկել</button>
-      </form>
+        <div class="footerdown">
+          <hr />
+          <div class="downfooter">
+            <p>© 2025 BtoB.am Բոլոր իրավունքները պաշտպանված են։</p>
+          </div>
+        </div>
+      </footer>
     </section>
-
-    <!-- MAP -->
-    <div class="maps"><div id="map"></div></div>
-
-    <!-- FOOTER -->
-    <footer>
-      <p>© 2025 BtoB Design Agency</p>
-    </footer>
   </body>
 </html>

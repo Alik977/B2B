@@ -661,3 +661,172 @@ padding: 35px;
     display: none;
   }
 }
+@media (max-width: 768px) {
+
+  /* ===== NAVBAR ===== */
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 70px;
+    height: auto;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  .mobile-menu {
+    z-index: 1000;
+  }
+
+
+  /* ===== HERO ===== */
+  .hero-content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .hero-left h2 {
+    font-size: 32px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+
+  /* ===== SLIDER ===== */
+  .slider-wrapper {
+    width: 100%;
+    padding: 200px 0;
+  }
+
+  .slide img {
+    width: 260px;
+    height: 360px;
+  }
+
+  .slide.left {
+    transform: translateX(-120px) scale(0.8);
+  }
+
+  .slide.right {
+    transform: translateX(120px) scale(0.8);
+  }
+
+
+  /* ===== ABOUT ===== */
+  .about_blok {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about {
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .about_p {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  .right_about {
+    padding: 0;
+    justify-content: center;
+  }
+
+
+  /* ===== STEPS ===== */
+  .steps-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .function p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .step {
+    min-width: 220px;
+    height: 260px;
+  }
+
+
+  /* ===== GRID ===== */
+  .gridbox {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 20px;
+  }
+
+  .box {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+
+  /* ===== SERVICES ===== */
+  .services {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .service-item img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .service-item_name,
+  .service-item_logo,
+  .service-item_brend,
+  .service-item_pack,
+  .service-item_bigbrend,
+  .service-item_UI {
+    position: static;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+
+  /* ===== FORM ===== */
+  .forma {
+    width: 100%;
+    height: auto;
+  }
+
+  .formcall {
+    padding: 20px;
+  }
+
+
+  /* ===== FOOTER ===== */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+}
