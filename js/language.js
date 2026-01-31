@@ -1,61 +1,36 @@
-let originalTexts = new Map();
+const langDropdown = document.querySelector(".lang-dropdown");
+const langSelected = document.getElementById("langSelected");
 
-function translatePage(dict) {
-  const walker = document.createTreeWalker(
-    document.body,
-    NodeFilter.SHOW_TEXT,
-    null
-  );
+langSelected.addEventListener("click", () => {
+  langDropdown.classList.toggle("open");
+});
 
-  let node;
-  while ((node = walker.nextNode())) {
-    const text = node.nodeValue.trim();
-    if (!text) continue;
-
-    if (!originalTexts.has(node)) {
-      originalTexts.set(node, node.nodeValue);
-    }
-
-    if (dict[text]) {
-      node.nodeValue = dict[text];
-    }
-  }
-}
-
-function restorePage() {
-  originalTexts.forEach((value, node) => {
-    node.nodeValue = value;
-  });
-}
-
-const dictionary = {
-  "ԳԼԽԱՎՈՐ": "HOME",
-  "ՄԵՐ ՄԱՍԻՆ": "ABOUT US",
-  "ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ": "SERVICES",
-  "ՊՈՐՏՖՈԼԻՈ": "PORTFOLIO",
-  "ԲԼՈԳ": "BLOG",
-  "ԿԱՊ": "CONTACT",
-  "Ավելին": "Read More",
-  "Տեսնել Ավելին": "See More",
-  "ՄԵՐ ՀԱՃԱԽՈՐԴՆԵՐԸ": "OUR CLIENTS",
-  "ԿԱՊ մեզ հետ": "CONTACT US",
-  "Աշխատանքային ժամեր": "Working Hours",
-  "Մենյու": "Menu",
-  "Բոլոր իրավունքները պաշտպանված են։": "All rights reserved."
-};
-
-const toggle = document.getElementById("langToggle");
-
-let currentLang = "hy";
-
-toggle.addEventListener("click", () => {
-  if (currentLang === "hy") {
-    translatePage(dictionary);
-    toggle.textContent = "EN";
-    currentLang = "en";
-  } else {
-    restorePage();
-    toggle.textContent = "Հայ";
-    currentLang = "hy";
+document.addEventListener("click", (e) => {
+  if (!langDropdown.contains(e.target)) {
+    langDropdown.classList.remove("open");
   }
 });
+
+function setLanguage(code, label, flag) {
+  localStorage.setItem("lang", code);
+
+  langSelected.innerHTML = `
+    <img src="${flag}" />
+    <span>${label}</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  `;
+
+  langDropdown.classList.remove("open");
+
+  console.log("Selected language:", code);
+}
+
+// page load
+const savedLang = localStorage.getItem("lang");
+if (savedLang === "en") {
+  setLanguage("en", "EN", "../pictures/flag/usa.png");
+} else if (savedLang === "ru") {
+  setLanguage("ru", "RU", "./pictures/flag/rus.png");
+} else {
+  setLanguage("hy", "Հայ", "./pictures/flag/arm.png");
+}

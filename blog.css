@@ -21,6 +21,64 @@ html {
   right: 20px;
   width: 80px;
 }
+.lang-dropdown {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lang-selected {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-selected img {
+  width: 24px;
+}
+
+.lang-selected i {
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.lang-dropdown.open .lang-selected i {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background: #1f1f1f;
+  border-radius: 6px;
+  padding: 6px 0;
+  width: 140px;
+  display: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.lang-dropdown.open .lang-menu {
+  display: block;
+}
+
+.lang-menu li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lang-menu li:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.lang-menu img {
+  width: 22px;
+}
 /* -------------------------------- NAVBAR ------------------------------- */
 .navbar {
   display: flex;

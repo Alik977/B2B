@@ -27,7 +27,7 @@
     ></script>
     <script src="./js/burger.js" defer></script>
     <script src="./js/language.js" defer></script>
-    <script src="./js/language.js" defer></script>
+    
   </head>
   <body>
     <!-- NAVBAR -->
@@ -48,16 +48,31 @@
           </ul>
         </nav>
 
-        <div class="nav-right">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <div class="lang" id="langToggle">Հայ</div>
+          <div class="nav-right">
+  <i class="fa-solid fa-magnifying-glass"></i>
 
-          <div class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+  <div class="lang-dropdown">
+  <div class="lang-selected" id="langSelected">
+    <img src="./pictures/flag/arm.png" alt="Հայերեն" />
+    <span>Հայ</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+
+  <ul class="lang-menu" id="langMenu">
+    <li onclick="setLanguage('hy', 'Հայ', './pictures/flag/arm.png')">
+      <img src="./pictures/flag/arm.png" />
+      <span>Հայերեն</span>
+    </li>
+    <li onclick="setLanguage('en', 'EN', './pictures/flag/usa.png')">
+      <img src="./pictures/flag/usa.png" />
+      <span>English</span>
+    </li>
+    <li onclick="setLanguage('ru', 'RU', './pictures/flag/rus.png')">
+      <img src="./pictures/flag/rus.png" />
+      <span>Русский</span>
+    </li>
+  </ul>
+</div>
       </header>
       <div class="mobile-menu" id="mobileMenu">
         <ul>
