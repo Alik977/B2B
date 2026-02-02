@@ -24,51 +24,73 @@
 
         <nav class="nav">
           <ul>
-            <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
-            <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
-            <li><a href="./procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
-            <li><a href="./service.html">ՊՈՐՏՖՈԼԻՈ</a></li>
-            <li><a href="./blog.html">ԲԼՈԳ</a></li>
-            <li><a href="./call.html">ԿԱՊ</a></li>
+            <li><a href="./index.html" data-i18n="menu_home">ԳԼԽԱՎՈՐ</a></li>
+            <li><a href="./about.html" data-i18n="menu_about">ՄԵՐ ՄԱՍԻՆ</a></li>
+            <li>
+              <a href="./procesing.html" data-i18n="menu_services"
+                >ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a
+              >
+            </li>
+            <li>
+              <a href="./service.html" data-i18n="menu_portfolio">ՊՈՐՏՖՈԼԻՈ</a>
+            </li>
+            <li><a href="./blog.html" data-i18n="menu_blog">ԲԼՈԳ</a></li>
+            <li><a href="call.html" data-i18n="menu_contact">ԿԱՊ</a></li>
           </ul>
         </nav>
 
-         <div class="nav-right">
-  <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="nav-right">
+          <i class="fa-solid fa-magnifying-glass"></i>
 
-  <div class="lang-dropdown">
-  <div class="lang-selected" id="langSelected">
-    <img src="./pictures/flag/arm.png" alt="Հայերեն" />
-    <span>Հայ</span>
-    <i class="fa-solid fa-chevron-down"></i>
-  </div>
+          <div class="lang-dropdown">
+            <div class="lang-selected" id="langSelected">
+              <img src="./pictures/flag/arm.png" alt="Հայերեն" />
+              <span>Հայ</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
 
-  <ul class="lang-menu" id="langMenu">
-    <li onclick="setLanguage('hy', 'Հայ', './pictures/flag/arm.png')">
-      <img src="./pictures/flag/arm.png" />
-      <span>Հայերեն</span>
-    </li>
-    <li onclick="setLanguage('en', 'EN', './pictures/flag/usa.png')">
-      <img src="./pictures/flag/usa.png" />
-      <span>English</span>
-    </li>
-    <li onclick="setLanguage('ru', 'RU', './pictures/flag/rus.png')">
-      <img src="./pictures/flag/rus.png" />
-      <span>Русский</span>
-    </li>
-  </ul>
-</div>
+            <ul class="lang-menu" id="langMenu">
+              <li onclick="setLanguage('hy', 'Հայ', './pictures/flag/arm.png')">
+                <img src="./pictures/flag/arm.png" />
+                <span>Հայերեն</span>
+              </li>
+              <li onclick="setLanguage('en', 'EN', './pictures/flag/usa.png')">
+                <img src="./pictures/flag/usa.png" />
+                <span>English</span>
+              </li>
+              <li onclick="setLanguage('ru', 'RU', './pictures/flag/rus.png')">
+                <img src="./pictures/flag/rus.png" />
+                <span>Русский</span>
+              </li>
+            </ul>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="mobile-menu" id="mobileMenu">
+            <ul>
+              <li><a href="./index.html" data-i18n="menu_home">ԳԼԽԱՎՈՐ</a></li>
+              <li>
+                <a href="./about.html" data-i18n="menu_about">ՄԵՐ ՄԱՍԻՆ</a>
+              </li>
+              <li>
+                <a href="./procesing.html" data-i18n="menu_services"
+                  >ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a
+                >
+              </li>
+              <li>
+                <a href="./service.html" data-i18n="menu_portfolio"
+                  >ՊՈՐՏՖՈԼԻՈ</a
+                >
+              </li>
+              <li><a href="./blog.html" data-i18n="menu_blog">ԲԼՈԳ</a></li>
+              <li><a href="call.html" data-i18n="menu_contact">ԿԱՊ</a></li>
+            </ul>
+          </div>
+        </div>
       </header>
-      <div class="mobile-menu" id="mobileMenu">
-        <ul>
-          <li><a href="./index.html">ԳԼԽԱՎՈՐ</a></li>
-          <li><a href="./about.html">ՄԵՐ ՄԱՍԻՆ</a></li>
-          <li><a href="./procesing.html">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a></li>
-          <li><a href="./service.html">ՊՈՐՏՖՈԼԻՈ</a></li>
-          <li><a href="./blog.html">ԲԼՈԳ</a></li>
-          <li><a href="./call.html">ԿԱՊ</a></li>
-        </ul>
-      </div>
     </section>
     <a href="#top"
       ><img src="./pictures/up-arrow.png" alt="" class="totop"
@@ -81,14 +103,31 @@
       </p>
 
       <div class="filters">
-        <button data-category="packaging" class="active">Փաթեթավորում</button>
-        <button data-category="branding">Բրենդավորում</button>
-        <button data-category="rebranding">Վերաբրենդավորում</button>
-        <button data-category="naming">Անվանակոչում</button>
-        <button data-category="logo">Լոգոյի Դիզայն</button>
-        <button data-category="UI">UI/UX Դիզայն</button>
+        <button data-category="packaging" class="active" id="pack">
+          Փաթեթավորում
+        </button>
+        <button data-category="branding" id="brend">Բրենդավորում</button>
+        <button data-category="rebranding" id="bigbrend">
+          Վերաբրենդավորում
+        </button>
+        <button data-category="naming" id="name">Անվանակոչում</button>
+        <button data-category="logo" id="logo">Լոգոյի Դիզայն</button>
+        <button data-category="UI" id="uiux">UI/UX Դիզայն</button>
       </div>
-
+      <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          const targetId = localStorage.getItem("activeSection");
+          if (targetId) {
+            const el = document.getElementById(targetId);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth", block: "start" });
+              // Մոդել emulate click / active class
+              el.classList.add("active-highlight");
+            }
+            localStorage.removeItem("activeSection");
+          }
+        });
+      </script>
       <div class="portfolio-grid">
         <div class="slot a"><img /></div>
         <div class="slot b"><img /></div>
@@ -164,17 +203,24 @@
         <div class="footer-col">
           <h4>Մենյու</h4>
           <ul>
-            <li><a href="./index.html">Գլխավոր</a></li>
-            <li><a href="./about.html">Մեր մասին</a></li>
-            <li><a href="./procesing.html">Ծառայություններ</a></li>
-            <li><a href="./service.html">Պորտֆոլիո</a></li>
-            <li><a href="./call.html">Կապ</a></li>
+            <li><a href="./index.html" data-i18n="menu_home">ԳԼԽԱՎՈՐ</a></li>
+            <li><a href="./about.html" data-i18n="menu_about">ՄԵՐ ՄԱՍԻՆ</a></li>
+            <li>
+              <a href="./procesing.html" data-i18n="menu_services"
+                >ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</a
+              >
+            </li>
+            <li>
+              <a href="./service.html" data-i18n="menu_portfolio">ՊՈՐՏՖՈԼԻՈ</a>
+            </li>
+            <li><a href="./blog.html" data-i18n="menu_blog">ԲԼՈԳ</a></li>
+            <li><a href="call.html" data-i18n="menu_contact">ԿԱՊ</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Կապ մեզ հետ</h4>
-          <p>info@BtoB.am</p>
+          <p>btobdesignstudio@gmail.com</p>
           <p>
             (+374) 94 50 50 80
 
