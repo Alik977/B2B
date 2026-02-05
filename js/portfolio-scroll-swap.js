@@ -1,13 +1,13 @@
 const images = [
   [
-    "./pictures/Без названия (85).png",
-    "./pictures/Упаковка для морса_ Этикетка.png",
-    "./pictures/Unique & Smart AI Packaging Design Trends.png",
-    "./pictures/TENGOO - Ismail Abu Elkheer ✪.png",
-    "./pictures/Без названия (86).png",
-    "./pictures/Без названия (87).png",
+    "./pictures/Realphoto/tamara.jpg",
+    "./pictures/Realphoto/mexri wine.jpg",
+    "./pictures/Realphoto/limonad.jpg",
+    "./pictures/Realphoto/shine1.jpg",
+    "./pictures/Realphoto/222-1.jpg",
+    "./pictures/Realphoto/monolit.jpg",
     "./pictures/luxury skincare product.png",
-    "./pictures/The Perfect Beach Drink – Refresh with Darling!.png"
+    "./pictures/Realphoto/zero99-1.jpg"
   ],
   [
     "./pictures/alt1.png",
