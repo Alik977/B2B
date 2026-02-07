@@ -11,6 +11,7 @@
     />
     <script src="./js/burger.js" defer></script>
     <script src="./js/language.js" defer></script>
+    <script src="./js/search.js" defer></script>
     <title>BtoB Design</title>
   </head>
   <body>
@@ -38,7 +39,17 @@
         </nav>
 
         <div class="nav-right">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
+          </div>
+
+          <!-- SEARCH OVERLAY -->
+          <div class="search-overlay" id="searchOverlay">
+            <div class="search-panel">
+              <input type="text" id="searchInput" placeholder="Փնտրել..." />
+              <span class="close-search" id="closeSearch">&times;</span>
+            </div>
+          </div>
 
           <div class="lang-dropdown">
             <div class="lang-selected" id="langSelected">

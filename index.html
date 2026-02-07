@@ -31,6 +31,7 @@
     <script src="./js/portfolio-scroll-swap.js" defer></script>
     <script src="./js/language.js" defer></script>
     <script src="./js/openmodal.js" defer></script>
+    <script src="./js/search.js" defer></script>
   </head>
   <body>
     <section class="hero">
@@ -57,7 +58,17 @@
         </nav>
 
         <div class="nav-right">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
+          </div>
+
+          <!-- SEARCH OVERLAY -->
+          <div class="search-overlay" id="searchOverlay">
+            <div class="search-panel">
+              <input type="text" id="searchInput" placeholder="Փնտրել..." />
+              <span class="close-search" id="closeSearch">&times;</span>
+            </div>
+          </div>
 
           <div class="lang-dropdown">
             <div class="lang-selected" id="langSelected">
@@ -154,12 +165,10 @@
           <div class="slider-wrapper">
             <div class="slider" id="slider">
               <div class="slide active">
-                <img
-                  src="./pictures/Irina Ryabikina - Commercial Illustrator_Character designer in Moscow, Russian Federation.png"
-                />
+                <img src="./pictures/Realphoto/mexri wine.jpg" />
               </div>
               <div class="slide">
-                <img src="./pictures/Realphoto/mexri wine.jpg" />
+                <img src="./pictures/Realphoto/xshop.jpg" />
               </div>
               <div class="slide">
                 <img src="./pictures/Realphoto/rework1.jpg" />
@@ -171,10 +180,10 @@
                 <img src="./pictures/Realphoto/222.jpg" />
               </div>
               <div class="slide">
-                <img src="./pictures/4 slide.jpg" />
+                <img src="./pictures/Realphoto/glovo.jpg" />
               </div>
               <div class="slide">
-                <img src="./pictures/3slide.jpg" />
+                <img src="./pictures/Realphoto/valex.jpg" />
               </div>
               <div class="slide">
                 <img src="./pictures/Realphoto/panda1.jpg" />
@@ -201,7 +210,7 @@
                 <img src="./pictures/Realphoto/tamara3.jpg" />
               </div>
             </div>
-         
+
             <div class="dots" id="dots"></div>
           </div>
         </div>
@@ -317,10 +326,10 @@
           <img src="./pictures/Realphoto/tamara3.jpg" alt="" />
         </div>
       </div>
-         <div class="modal" id="imgModal">
-              <span class="close">&times;</span>
-              <img class="modal-content" id="modalImg" />
-            </div>
+      <div class="modal" id="imgModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" />
+      </div>
     </section>
     <section class="function_box">
       <div class="function">

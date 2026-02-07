@@ -12,7 +12,7 @@
     <script src="./js/filter_logo.js" defer></script>
     <script src="./js/burger.js" defer></script>
     <script src="./js/language.js" defer></script>
-
+    <script src="./js/search.js" defer></script>
     <title>BtoB Design</title>
   </head>
   <body>
@@ -40,7 +40,17 @@
         </nav>
 
         <div class="nav-right">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
+          </div>
+
+          <!-- SEARCH OVERLAY -->
+          <div class="search-overlay" id="searchOverlay">
+            <div class="search-panel">
+              <input type="text" id="searchInput" placeholder="Փնտրել..." />
+              <span class="close-search" id="closeSearch">&times;</span>
+            </div>
+          </div>
 
           <div class="lang-dropdown">
             <div class="lang-selected" id="langSelected">
@@ -49,7 +59,7 @@
               <i class="fa-solid fa-chevron-down"></i>
             </div>
 
-             <ul class="lang-menu" id="langMenu">
+            <ul class="lang-menu" id="langMenu">
               <li onclick="setLanguage('hy', 'Հայ', './pictures/flag/arm.png')">
                 <img src="./pictures/flag/arm.png" />
                 <span>Հայերեն</span>
@@ -62,11 +72,17 @@
                 <img src="./pictures/flag/rus.png" />
                 <span>Русский</span>
               </li>
-              <li onclick="setLanguage('fr', 'FR', './pictures/flag/france.png')">
+              <li
+                onclick="setLanguage('fr', 'FR', './pictures/flag/france.png')"
+              >
                 <img src="./pictures/flag/france.png" />
                 <span>France</span>
               </li>
-              <li onclick="setLanguage('ger', 'GER', './pictures/flag/german.png')">
+              <li
+                onclick="
+                  setLanguage('ger', 'GER', './pictures/flag/german.png')
+                "
+              >
                 <img src="./pictures/flag/german.png" />
                 <span>German</span>
               </li>

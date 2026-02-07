@@ -627,3 +627,75 @@ li a:hover {
 .downfooter {
   padding: 6px;
 }
+.search-panel input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.close-search {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.highlight {
+  background: yellow;
+  color: black;
+}
+/* SEARCH OVERLAY */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+  z-index: 9999;
+}
+
+/* SEARCH PANEL */
+.search-panel {
+  background: #fff;
+  width: 90%;
+  max-width: 420px;
+  padding: 14px 45px 14px 16px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.search-panel input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* CLOSE */
+.close-search {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  background: yellow;
+  color: black;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .search-overlay {
+    padding-top: 90px;
+  }
+
+  .search-panel {
+    width: 92%;
+  }
+}
