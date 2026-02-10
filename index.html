@@ -32,8 +32,10 @@
     <script src="./js/language.js" defer></script>
     <script src="./js/openmodal.js" defer></script>
     <script src="./js/search.js" defer></script>
+    <script src="./js/cursor.js" defer></script>
   </head>
   <body>
+    <div class="custom-cursor"></div>
     <section class="hero">
       <header class="navbar">
         <div class="logo">
@@ -133,10 +135,14 @@
       <main class="hero-content">
         <div class="hero-left">
           <img src="./pictures/BtoB Design Agency.png" alt="" />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+          <p data-i18n="menu_info">
+            BtoB Design-ը ժամանակակից դիզայն ստուդիա է, որը օգնում է բիզնեսներին
+            ունենալ ուժեղ, վստահելի և գրավիչ տեսք թվային միջավայրում։ Մենք
+            ստեղծում ենք մաքուր, մտածված և ֆունկցիոնալ դիզայն լուծումներ՝ սկսած
+            վեբ կայքերից ու բրենդինգից մինչև օգտատիրոջ համար հարմար
+            ինտերֆեյսներ։ BtoB Design-ի նպատակն է ոչ միայն գեղեցիկ դիզայն
+            ստեղծել, այլև օգնել բիզնեսին աճել, առանձնանալ մրցակիցներից և
+            վստահություն ներշնչել իր հաճախորդներին։
           </p>
 
           <button class="hero-btn" data-i18n="menu_click">Ավելին</button>
@@ -295,9 +301,9 @@
     <hr />
     <section>
       <div class="porfolio">
-        <div class="portgolioh1">ՊՈՐՏՖՈԼԻՈ</div>
+        <div class="portgolioh1" data-i18n="menu_portfolio">ՊՈՐՏՖՈԼԻՈ</div>
 
-        <div class="seeall"><a href="./service.html">Տեսնել Ավելին</a></div>
+        <div class="seeall"><a href="./service.html" data-i18n="menu_click">Տեսնել Ավելին</a></div>
       </div>
       <div class="gridbox">
         <div class="box box1">
@@ -332,10 +338,10 @@
       </div>
     </section>
     <section class="function_box">
-      <div class="function">
-        <h2>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</h2>
-        <p>
-          <span>Ձեր բրենդը արժանի է ավելիին։</span>
+      <div class="function" >
+        <h2 data-i18n="menu_services">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</h2>
+        <p data-i18n="menu_brand">
+          <span >Ձեր բրենդը արժանի է ավելիին։</span>
           <br />
           <span
             >Ընտրեք ծառայությունը, որը կբարձրացնի ձեր տեսանելիությունն ու

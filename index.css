@@ -14,7 +14,6 @@ a {
 }
 .lang-dropdown {
   position: relative;
-  cursor: pointer;
   user-select: none;
 }
 
@@ -1152,3 +1151,24 @@ align-items: center;
     width: 92%;
   }
 }
+body {
+  cursor: url(./pictures/cursor.png),auto;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 26px;
+  height: 26px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+
+  transition: 
+    transform 0.15s ease,
+    opacity 0.15s ease,
+    background 0.15s ease;
+  z-index: 10000;
+  
+}
+
