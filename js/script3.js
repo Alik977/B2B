@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   const slider = document.getElementById("stepsSlider1");
   const slides = slider.querySelectorAll(".step1");
 
@@ -21,3 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(moveSlider, 3000);
 });
+*/

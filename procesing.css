@@ -727,3 +727,107 @@ button:hover ~ .custom-cursor,
   background: rgba(255, 190, 38, 0.25); /* քո դեղին accent */
   border-color: #ffbe26;
 }
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.services > div {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: serviceFade 0.8s ease forwards;
+}
+
+/* Delay-եր */
+.services > div:nth-child(1) { animation-delay: 0.1s; }
+.services > div:nth-child(2) { animation-delay: 0.2s; }
+.services > div:nth-child(3) { animation-delay: 0.3s; }
+.services > div:nth-child(4) { animation-delay: 0.4s; }
+.services > div:nth-child(5) { animation-delay: 0.5s; }
+.services > div:nth-child(6) { animation-delay: 0.6s; }
+.services > div:nth-child(7) { animation-delay: 0.7s; }
+
+@keyframes serviceFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.services > div {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.services > div:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.services p {
+  transition: 0.3s;
+}
+
+.services > div:hover p {
+  color: #f4c542;
+}
+.services > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+
+
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+/* Soft radial light on hover */
+.services > div::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(244,197,66,0.25) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: 0.6s ease;
+}
+
+.services > div:hover::before {
+  opacity: 1;
+}
+
+.services > div:hover::after {
+  transform: translate(-50%,-50%) scale(1);
+}
+
+/* Lift + smooth scale */
+.services > div:hover {
+  transform: translateY(-12px) scale(1.05);
+}
+
+/* Text smooth color */
+.services p {
+  transition: 0.4s ease;
+}
+
+.services > div:hover p {
+  color: #f4c542;
+}
+.services > div {
+  opacity: 0;
+  transform: translateY(80px);
+  filter: blur(8px);
+  transition: opacity 0.8s ease, 
+              transform 0.8s ease, 
+              filter 0.8s ease;
+}
+
+.services > div.show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
