@@ -179,13 +179,13 @@ height: 180vh;
     font-size: 20px;
  
 }
-.about_blok img{
-    margin: auto;
-    padding: 121px 0px 0px 370px; 
-   
+.about_blok img {
+  display: block;
+  margin: 120px auto 0;
 }
+
 .about_blok h2{
-    padding: 101px 0px 0px 170px;
+    padding: 101px 0px 5px 180px;
     font-size: 32px;
 }
 .footer {
@@ -289,15 +289,12 @@ padding: 35px;
 .callicon{
   width: 22px;
 }
-.steps {
-  padding: 100px 120px;
-  background: rgb(68, 57, 141);
-}
+
 
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 40px;
 }
 
 .card {
@@ -307,6 +304,27 @@ padding: 35px;
   position: relative;
 
 }
+.imgoffice {
+  width: 1160px;
+  max-width: 100%;
+  display: block;
+  margin: 120px auto 0;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.imgoffice:hover {
+  transform: scale(1.04);
+}
+
+
+
+/* Hover effect */
+.imgoffice:hover {
+  transform: scale(1.05) translateY(-8px);
+
+}
+
 
 .card.yellow {
   background: #ffb81c;
@@ -437,7 +455,7 @@ padding: 35px;
 .steps1-grid1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 60px;
 }
 
 .card1 {
@@ -447,7 +465,24 @@ padding: 35px;
   position: relative;
 
 }
-
+.card2{
+ height: 399px;
+  border-radius: 22px;
+  padding: 28px;
+  position: relative;
+}
+.card2 img{
+  width: 329px;
+  height: 469px;
+  position: relative;
+}
+.card2 h4{
+padding-bottom: 15px;
+}
+.card1 img{
+  width: 329px;
+  height: 469px;
+}
 
 @media (max-width: 768px) {
   /* ===== NAVBAR ===== */
