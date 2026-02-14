@@ -927,3 +927,115 @@ button:hover ~ .custom-cursor,
   background: rgba(255, 190, 38, 0.25); /* քո դեղին accent */
   border-color: #ffbe26;
 }
+/* ===== OFFLINE OVERLAY ===== */
+
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}
+  /* OFFLINE OVERLAY - BTOB STYLE */
+
+.offline-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+.offline-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.offline-card {
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: white;
+  width: 400px;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.offline-card h1 {
+  font-size: 100px;
+  margin: 0;
+  background: linear-gradient(90deg, #00f5ff, #ff00c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+.offline-card h2 {
+  margin: 10px 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.offline-card p {
+  opacity: 0.6;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.offline-card button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00f5ff, #ff00c8);
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.offline-card button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 5px #00f5ff); }
+  to { filter: drop-shadow(0 0 20px #ff00c8); }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
