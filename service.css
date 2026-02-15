@@ -170,7 +170,7 @@ nav a {
   font-size: 32px;
 }
 .biografia p {
-  padding: 30px 0px 250px 170px;
+  padding: 30px 0px 350px 170px;
   width: 1167px;
   height: 155px;
   font-size: 20px;
@@ -1456,7 +1456,7 @@ button:hover ~ .custom-cursor,
   font-size: 100px;
   margin: 0;
   background: linear-gradient(90deg, #00f5ff, #ff00c8);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glow 2s infinite alternate;
 }
@@ -1496,4 +1496,89 @@ button:hover ~ .custom-cursor,
 @keyframes fadeUp {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+/* ================= MOBILE BURGER ONLY ================= */
+@media (max-width: 768px) {
+
+  /* Desktop menu թաքցնում ենք */
+  .nav {
+    display: none !important;
+  }
+
+  /* Burger ցույց ենք տալիս */
+  .burger {
+    display: flex !important;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .burger span {
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+
+  /* Burger animation */
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* Mobile menu */
+
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  .mobile-menu li {
+    margin: 22px 0;
+  }
+
+  .mobile-menu a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+}
+/* ================= MOBILE GRID FIX ================= */
+@media (max-width: 768px) {
+
+  .portfolio-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* 1 սյուն */
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .slot {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    height: auto !important;
+  }
+
+  .slot img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
 }
