@@ -1,4 +1,22 @@
 const imageSets = {
+     allpic: [
+    "pictures/all/1.png",
+    "pictures/all/16.jpg",
+    "pictures/all/3.jpg",
+    "pictures/all/4.jpg",
+    "pictures/all/5.jpg",
+    "pictures/all/6.png",
+    "pictures/all/8.png",
+    "pictures/all/7.png",
+    "pictures/all/9.png",
+    "pictures/all/10.png",
+    "pictures/all/11.jpg",
+    "pictures/all/12.jpg",
+    "pictures/all/13.jpg",
+    "pictures/all/14.jpg",
+    "pictures/all/15.png",
+     "pictures/all/2.png",
+  ],
   packaging: [
     "pictures/Realphoto/panda.jpg",
     "pictures/Realphoto/limonad1.jpg",
@@ -75,19 +93,19 @@ const imageSets = {
   ],
    logo: [
     "pictures/Realphoto/222.jpg",
-    "pictures/logo/2.jpg",
+    "pictures/Realphoto/DARBINYAMC GROUP 1.png",
     "pictures/logo/3.jpg",
     "pictures/logo/12.jpg",
     "pictures/logo/13.jpg",
     "pictures/Realphoto/ttvik.jpg",
     "pictures/logo/4.jpg",
-    "pictures/logo/8.jpg",
-    "pictures/logo/9.jpg",
+    "pictures/Realphoto/Group 163.png",
+    "pictures/Realphoto/logo.png",
     "pictures/logo/10.jpg",
     "pictures/logo/11.jpg",
     "pictures/logo/7.jpg",
     "pictures/logo/5.jpg",
-    "pictures/logo/14.jpg",
+    "pictures/Realphoto/Group 165.png",
     "pictures/logo/15.jpg",
     "pictures/Realphoto/rework.jpg",
   ],
@@ -109,13 +127,32 @@ const imageSets = {
     "pictures/UI/15.jpg",
      "pictures/UI/2.jpg",
   ],
+       Interier: [
+    "pictures/Interier/1.jpg",
+    "pictures/Interier/16.jpg",
+    "pictures/Interier/3.jpg",
+    "pictures/Interier/4.png",
+    "pictures/Interier/5.jpg",
+    "pictures/Interier/6.jpg",
+    "pictures/Interier/8.png",
+    "pictures/Interier/7.png",
+    "pictures/Interier/9.jpg",
+    "pictures/Interier/10.jpg",
+    "pictures/Interier/11.jpg",
+    "pictures/Interier/12.jpg",
+    "pictures/Interier/13.jpg",
+    "pictures/Interier/14.jpg",
+    "pictures/Interier/15.jpg",
+     "pictures/Interier/2.jpg",
+  ],
+  
 };
 
 const buttons = document.querySelectorAll(".filters button");
 const images = document.querySelectorAll(".slot img");
 
 // initial load
-loadImages("packaging");
+loadImages("allpic");
 
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {

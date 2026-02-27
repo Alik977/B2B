@@ -6,21 +6,21 @@ const images = [
     "./pictures/Realphoto/shine1.jpg",
     "./pictures/Realphoto/222-1.jpg",
     "./pictures/Realphoto/monolit.jpg",
-    "./pictures/luxury skincare product.png",
+    "./pictures/Realphoto/Gemini_Generated_Image_xvjss0xvjss0xvjs 2.png",
     "./pictures/Realphoto/zero99-1.jpg"
   ],
   [
-    "./pictures/alt1.png",
-    "./pictures/alt2.jpg",
-    "./pictures/alt3.jpg",
-    "./pictures/alt4.jpg",
-    "./pictures/alt5.jpg",
-    "./pictures/alt6.jpg",
-    "./pictures/alt7.jpg",
-    "./pictures/alt8.jpg"
+       "./pictures/Realphoto/Group 256 1.png",
+    "./pictures/Realphoto/image_1_1767952117301 1.png",
+    "./pictures/Realphoto/image_1_1772098684794 2.png",
+    "./pictures/Realphoto/Gemini_Generated_Image_ym13hqym13hqym13 2.png",
+    "./pictures/Realphoto/image_1_1772098205922 2.png",
+    "./pictures/Realphoto/WhatsApp Image 2026-02-24 at 09.14.54 1.png",
+    "./pictures/Realphoto/panda.jpg",
+    "./pictures/Realphoto/logo.png"
   ],
-  [
-    "./pictures/next1.jpg",
+  /*[
+    /*"./pictures/next1.jpg",
     "./pictures/next2.jpg",
     "./pictures/next3.jpg",
     "./pictures/next4.jpg",
@@ -28,7 +28,7 @@ const images = [
     "./pictures/next6.jpg",
     "./pictures/next7.jpg",
     "./pictures/next8.jpg"
-  ]
+  ]*/
 ];
 const boxes = document.querySelectorAll(".gridbox img");
 let currentIndex = 0;
