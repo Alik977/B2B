@@ -15,6 +15,7 @@
     <script src="./js/language.js" defer></script>
     <script src="./js/search.js" defer></script>
     <script src="./js/cursor.js" defer></script>
+    <script src="./js/openmodal.js" defer></script>
 
     <title>BtoB Design</title>
   </head>
@@ -131,12 +132,8 @@
       </p>
 
       <div class="filters">
-        <button data-category="allpic" class="active" id="all">
-          Բոլորը
-        </button>
-        <button data-category="packaging"  id="pack">
-          Փաթեթավորում
-        </button>
+        <button data-category="allpic" class="active" id="all">Բոլորը</button>
+        <button data-category="packaging" id="pack">Փաթեթավորում</button>
         <button data-category="branding" id="brend">Բրենդավորում</button>
         <button data-category="rebranding" id="bigbrend">
           Վերաբրենդավորում
@@ -160,27 +157,34 @@
           }
         });
       </script>
-      <div class="portfolio-grid">
-        <div class="slot a"><img /></div>
-        <div class="slot b"><img /></div>
-        <div class="slot c"><img /></div>
+      <div class="gridbox">
+        <div class="portfolio-grid">
+          <div class="slot a"><img /></div>
+          <div class="slot b"><img /></div>
+          <div class="slot c"><img /></div>
 
-        <div class="slot d"><img /></div>
-        <div class="slot e"><img /></div>
+          <div class="slot d"><img /></div>
+          <div class="slot e"><img /></div>
 
-        <div class="slot g"><img /></div>
-        <div class="slot h"><img /></div>
-        <div class="slot f"><img /></div>
+          <div class="slot g"><img /></div>
+          <div class="slot h"><img /></div>
+          <div class="slot f"><img /></div>
 
-        <div class="slot i"><img /></div>
-        <div class="slot j"><img /></div>
-        <div class="slot n"><img /></div>
-        <div class="slot k"><img /></div>
-        <div class="slot l"><img /></div>
-        <div class="slot m"><img /></div>
+          <div class="slot i"><img /></div>
+          <div class="slot j"><img /></div>
+          <div class="slot n"><img /></div>
+          <div class="slot k"><img /></div>
+          <div class="slot l"><img /></div>
+          <div class="slot m"><img /></div>
 
-        <div class="slot o"><img /></div>
-        <div class="slot p"><img /></div>
+          <div class="slot o"><img /></div>
+          <div class="slot p"><img /></div>
+        </div>
+      </div>
+
+      <div class="modal" id="imgModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" />
       </div>
     </section>
     <section class="biografia">
