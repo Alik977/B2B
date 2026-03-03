@@ -902,7 +902,7 @@ button:hover ~ .custom-cursor,
   font-size: 100px;
   margin: 0;
   background: linear-gradient(90deg, #00f5ff, #ff00c8);
-  -webkit-background-clip: text;
+background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glow 2s infinite alternate;
 }
@@ -942,4 +942,172 @@ button:hover ~ .custom-cursor,
 @keyframes fadeUp {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+.vector{
+  width: 500px;
+  height: 500px;
+  padding: 20px 0px 0px 50px
+}
+
+
+/* Աջ դեղին կոր գիծ */
+.vector {
+  position: absolute;
+  top: 100px;
+  right: -800px;
+  width: 500px; 
+  height: auto;
+}
+.interier{
+  font-size: 32px;
+  position: relative;
+  top: 200px;
+  left: 320px;
+}
+.ui{
+   font-size: 32px;
+  position: relative;
+  top: 600px;
+  left: 220px;
+}
+@media (max-width: 768px) {
+
+  /* SERVICES CONTAINER */
+  .services {
+    position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* VECTOR-ը հանենք mobile-ում */
+  .vector {
+    display: none !important;
+  }
+
+  /* Բոլոր service item-ները */
+  .service-item_name,
+  .service-item_logo,
+  .service-item_brend,
+  .service-item_pack,
+  .service-item_bigbrend,
+  .service-item_UI,
+  .interier,
+  .ui {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+  }
+
+}
+@media (max-width: 768px) {
+
+  /* SERVICES SECTION */
+  .services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 20px;
+    
+    /* background fix */
+    background-size: cover;       /* ոչ թե 100% 100% */
+    background-position: center;
+  }
+
+  /* Հանում ենք մեծ ֆոնի նկարի խանգարումը */
+  .service-item img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  /* VECTOR հանում ենք mobile-ում */
+  .vector {
+    display: none;
+  }
+
+  /* Բոլոր absolute item-ները դարձնում ենք նորմալ */
+  .service-item_name,
+  .service-item_logo,
+  .service-item_brend,
+  .service-item_pack,
+  .service-item_bigbrend,
+  .service-item_UI,
+  .interier,
+  .ui {
+    position: static;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  /* Եթե Ellipse կա տեքստի կողքը */
+  .services img {
+    max-width: 24px;
+  }
+
+}
+@media (max-width:768px){
+
+  .footer-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:30px;
+  }
+
+  .footer-col{
+    width:100%;
+  }
+
+  .footer-logo{
+    justify-content:center;
+  }
+
+  .footer-socials{
+    justify-content:center;
+  }
+
+}
+@media (max-width:768px){
+
+  .services{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+  }
+
+  .service-item_name,
+  .service-item_logo,
+  .service-item_brend,
+  .service-item_pack,
+  .service-item_bigbrend,
+  .service-item_UI,
+  .interier,
+  .ui{
+    position:static !important;
+    left:auto !important;
+    top:auto !important;
+    width:100%;
+    margin:10px 0;
+    font-size:20px;
+  }
+
+  .services img{
+    margin:0 auto;
+  }
+
 }
