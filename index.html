@@ -34,6 +34,7 @@
     <script src="./js/search.js" defer></script>
     <script src="./js/cursor.js" defer></script>
     <script src="./js/scroling.js" defer></script>
+    <script src="./js/scriptgopage.js" defer></script>
   </head>
   <body>
     <div class="custom-cursor"></div>
@@ -354,41 +355,55 @@
         </div>
 
         <div class="service-item_name">
-          <img src="./pictures/Ellipse 162.png" alt="" />
-          <p data-i18n="menu_nameing">ԱՆՎԱՆԱԿՈՉՈՒՄ</p>
+          <a
+            href="./service.html"
+            target="_blank"
+            onclick="goToSection('name')"
+          >
+            <img src="./pictures/Ellipse 162.png" alt="" />
+            <p data-i18n="menu_nameing">ԱՆՎԱՆԱԿՈՉՈՒՄ</p></a
+          >
         </div>
         <div class="service-item_logo">
-          <img src="./pictures/Ellipse 162.png" alt="" />
-          <p data-i18n="menu_logo">ԼՈԳՈՅԻ ԴԻԶԱՅՆ</p>
+          <a href="./service.html" onclick="goToSection('logo')">
+            <img src="./pictures/Ellipse 162.png" alt="" />
+            <p data-i18n="menu_logo">ԼՈԳՈՅԻ ԴԻԶԱՅՆ</p>
+          </a>
         </div>
 
         <div><img src="./pictures/Vector.png" alt="" class="vector" /></div>
+        <a href="./service.html " onclick="goToSection('interier')"
+          ><p data-i18n="menu_interier" class="interier">
+            Ինտերիեր Դիզայն <img src="./pictures/Ellipse 162.png" alt="" /></p
+        ></a>
 
-        <p data-i18n="menu_interier" class="interier">
-          Ինտերիեր Դիզայն <img src="./pictures/Ellipse 162.png" alt="" />
-        </p>
-        <p data-i18n="menu_uiux" class="ui">
-          >UI/UX ԴԻԶԱՅՆ <img src="./pictures/Ellipse 162.png" alt="" />
-        </p>
+        <a href="./service.html" onclick="goToSection('uiux')">
+          <p data-i18n="menu_uiux" class="ui">
+            UI/UX ԴԻԶԱՅՆ
+            <img src="./pictures/Ellipse 162.png" alt="" />
+          </p>
+        </a>
         <div class="service-item_brend">
-          <p data-i18n="menu_branding">ԲՐԵՆԴԱՎՈՐՈՒՄ</p>
+          <a href="./service.html" onclick="goToSection('brend')">
+            <p data-i18n="menu_branding">ԲՐԵՆԴԱՎՈՐՈՒՄ</p>
+          </a>
         </div>
 
         <div class="service-item_pack">
-          <img src="./pictures/Ellipse 162.png" alt="" />
-          <p data-i18n="menu_packing">ՓԱԹԵԹԱՎՈՐՈՒՄ</p>
+          <a href="./service.html" onclick="goToSection('pack')">
+            <img src="./pictures/Ellipse 162.png" alt="" />
+            <p data-i18n="menu_packing">ՓԱԹԵԹԱՎՈՐՈՒՄ</p>
+          </a>
         </div>
 
         <div class="service-item_bigbrend">
-          <p data-i18n="menu_brandunder">
-            ՎԵՐԱԲՐԵՆԴԱՎՈՐՈՒՄ ԵՎ
-            <img src="./pictures/Ellipse 162.png" alt="" />ՎԵՐԱՁԵԱՎՈՐՈՒՄ
-          </p>
+          <a href="./service.html" onclick="goToSection('bigbrend')"
+            ><p data-i18n="menu_brandunder">
+              ՎԵՐԱԲՐԵՆԴԱՎՈՐՈՒՄ ԵՎ
+              <img src="./pictures/Ellipse 162.png" alt="" />ՎԵՐԱՁԵԱՎՈՐՈՒՄ
+            </p></a
+          >
         </div>
-
-       
-         
-        
       </div>
     </section>
 

@@ -144,18 +144,17 @@
         <button data-category="Interier" id="interier">Ինտերիեր Դիզայն</button>
       </div>
       <script>
-        window.addEventListener("DOMContentLoaded", () => {
+               window.addEventListener("DOMContentLoaded", () => {
           const targetId = localStorage.getItem("activeSection");
           if (targetId) {
             const el = document.getElementById(targetId);
             if (el) {
-              el.scrollIntoView({ behavior: "smooth", block: "start" });
-              // Մոդել emulate click / active class
-              el.classList.add("active-highlight");
+              el.click(); // սա պարտադիր է
             }
             localStorage.removeItem("activeSection");
           }
         });
+                
       </script>
       <div class="gridbox">
         <div class="portfolio-grid">
@@ -187,9 +186,7 @@
         <img class="modal-content" id="modalImg" />
       </div>
     </section>
-    <section class="biografia">
-      
-    </section>
+    <section class="biografia"></section>
     <hr />
     <footer class="footer">
       <div class="footer-container">

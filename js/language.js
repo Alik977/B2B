@@ -195,7 +195,7 @@ const translations = {
     menu_branding: "MARQUE",
     menu_packing: "CONDITIONNEMENT",
     menu_brandunder: "RECONVERSION DE L'IMAGE ET REPENSÉE",
-    menu_uiux: "CONCEPTION D'INTERFACE UTILISATEUR/EXPÉRIENCE VISUELLE",
+    menu_uiux: "Conception UI/UX",
     menu_friendfirma: "NOS CLIENTS",
     menu_call: "CONTACT",
     menu_contact1: "Coordonnées",

@@ -165,7 +165,14 @@ buttons.forEach(btn => {
 });
 
 function loadImages(category) {
+  const selectedImages = imageSets[category];
+
   images.forEach((img, index) => {
-    img.src = imageSets[category][index];
+    if (selectedImages[index]) {
+      img.src = selectedImages[index];
+      img.style.display = "block";
+    } else {
+      img.style.display = "none";
+    }
   });
 }

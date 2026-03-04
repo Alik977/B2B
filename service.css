@@ -1617,3 +1617,35 @@ button:hover ~ .custom-cursor,
   color: white;
   cursor: pointer;
 }
+.interier {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.interier:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.services p {
+  transition: 0.3s;
+}
+
+.interier:hover  {
+  color: #f4c542;
+}
+.ui {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ui:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.ui p {
+  transition: 0.3s;
+}
+
+.ui:hover  {
+  color: #f4c542;
+}
