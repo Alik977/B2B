@@ -1390,3 +1390,6 @@ button:hover ~ .custom-cursor,
   line-height: 1.5;
   margin: 0;
 }
+body{
+user-select:none;
+}

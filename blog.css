@@ -860,8 +860,8 @@ button:hover ~ .custom-cursor,
   font-size: 100px;
   margin: 0;
   background: linear-gradient(90deg, #00f5ff, #ff00c8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
   animation: glow 2s infinite alternate;
 }
 
@@ -900,4 +900,7 @@ button:hover ~ .custom-cursor,
 @keyframes fadeUp {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+body{
+user-select:none;
 }

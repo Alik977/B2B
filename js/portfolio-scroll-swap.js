@@ -1,4 +1,4 @@
-const images = [
+const imagesSets = [
   [
     "./pictures/Realphoto/tamara.jpg",
     "./pictures/Realphoto/mexri wine.jpg",
@@ -19,42 +19,61 @@ const images = [
     "./pictures/Realphoto/panda.jpg",
     "./pictures/Realphoto/logo.png"
   ],
-  /*[
-    /*"./pictures/next1.jpg",
-    "./pictures/next2.jpg",
-    "./pictures/next3.jpg",
-    "./pictures/next4.jpg",
-    "./pictures/next5.jpg",
-    "./pictures/next6.jpg",
-    "./pictures/next7.jpg",
-    "./pictures/next8.jpg"
-  ]*/
+  [
+    "./pictures/Realphoto/glovo.jpg",
+    "./pictures/Realphoto/edw.jpg",
+    "./pictures/Realphoto/panda2.jpg",
+    "./pictures/Realphoto/shine.jpg",
+    "./pictures/Realphoto/zero99.jpg",
+    "./pictures/Realphoto/xshop.jpg",
+    "./pictures/Realphoto/rework.jpg",
+    "./pictures/Realphoto/tamara3.jpg"
+  ]
 ];
-const boxes = document.querySelectorAll(".gridbox img");
-let currentIndex = 0;
-let isScrolling = false;
 
-window.addEventListener("wheel", (e) => {
-  if (isScrolling) return;
+const images = document.querySelectorAll(".gridbox img");
+const slidergrid = document.getElementById("portfolioSlider");
 
-  if (e.deltaY > 0) {
-    currentIndex++;
-  } else {
-    currentIndex--;
-  }
+slidergrid.max = imagesSets.length - 1;
 
-  if (currentIndex < 0) currentIndex = images.length - 1;
-  if (currentIndex >= images.length) currentIndex = 0;
+let currentSet = 0;
 
-  boxes.forEach((img, i) => {
-    img.style.opacity = "0";
+slidergrid.addEventListener("input", () => {
 
-    setTimeout(() => {
-      img.src = images[currentIndex][i];
-      img.style.opacity = "1";
-    }, 250);
-  });
+const newSet = parseInt(slidergrid.value);
 
-  isScrolling = true;
-  setTimeout(() => isScrolling = false, 700);
+if(newSet === currentSet) return;
+
+images.forEach((img)=>{
+img.style.transform = "translateX(-60px)";
+img.style.opacity = "0";
+});
+
+setTimeout(()=>{
+
+images.forEach((img,i)=>{
+
+img.src = imagesSets[newSet][i];
+
+img.style.transform = "translateX(60px)";
+img.style.opacity = "0";
+
+});
+
+setTimeout(()=>{
+
+images.forEach((img)=>{
+img.style.transform = "translateX(0)";
+img.style.opacity = "1";
+});
+
+},50);
+
+},300);
+
+currentSet = newSet;
+
+const percent = (slidergrid.value / slidergrid.max) * 100;
+
+
 });

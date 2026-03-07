@@ -64,7 +64,7 @@ function prevSlide() {
 
 /* ===== AUTO PLAY ===== */
 function startAutoPlay() {
-  interval = setInterval(nextSlide, 3500); 
+  interval = setInterval(nextSlide, 4500); 
 }
 
 function restartAutoPlay() {
@@ -111,7 +111,7 @@ function triggerOfflineEffect() {
 
   setTimeout(() => {
     offlineOverlay.classList.add("active");
-  }, 400);
+  }, 700);
 }
 
 function removeOfflineEffect() {

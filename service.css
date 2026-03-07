@@ -1649,3 +1649,6 @@ button:hover ~ .custom-cursor,
 .ui:hover  {
   color: #f4c542;
 }
+body{
+user-select:none;
+}
