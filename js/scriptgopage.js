@@ -1,3 +1,3 @@
-function goToSection(id) {
-  localStorage.setItem("activeSection", id);
+function goToSection(category) {
+  localStorage.setItem("portfolioCategory", category);
 }

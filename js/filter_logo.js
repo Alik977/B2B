@@ -5,9 +5,9 @@ const imageSets = {
     "pictures/all/3.jpg",
     "pictures/all/4.jpg",
     "pictures/all/5.jpg",
-    "pictures/all/6.png",
+    "pictures/all/6.jpg",
     "pictures/all/8.png",
-    "pictures/all/7.png",
+    "pictures/all/7.jpg",
     "pictures/all/9.png",
     "pictures/all/10.png",
     "pictures/all/11.jpg",
@@ -176,3 +176,15 @@ function loadImages(category) {
     }
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const savedCategory = localStorage.getItem("portfolioCategory");
+
+  if (savedCategory) {
+    const button = document.getElementById(savedCategory);
+    if (button) {
+      button.click();
+    }
+
+    localStorage.removeItem("portfolioCategory");
+  }
+});

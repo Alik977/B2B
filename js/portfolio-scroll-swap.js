@@ -6,15 +6,15 @@ const imagesSets = [
     "./pictures/Realphoto/shine1.jpg",
     "./pictures/Realphoto/222-1.jpg",
     "./pictures/Realphoto/monolit.jpg",
-    "./pictures/Realphoto/Gemini_Generated_Image_xvjss0xvjss0xvjs 2.png",
+    "./pictures/Realphoto/Gemini_Generated_Image_xvjss0xvjss0xvjs 1.png",
     "./pictures/Realphoto/zero99-1.jpg"
   ],
   [
        "./pictures/Realphoto/Group 256 1.png",
     "./pictures/Realphoto/image_1_1767952117301 1.png",
-    "./pictures/Realphoto/image_1_1772098684794 2.png",
-    "./pictures/Realphoto/Gemini_Generated_Image_ym13hqym13hqym13 2.png",
-    "./pictures/Realphoto/image_1_1772098205922 2.png",
+    "./pictures/Realphoto/Gemini_Generated_Image_z824cfz824cfz824 1.png",
+    "./pictures/Realphoto/Gemini_Generated_Image_tr9aa3tr9aa3tr9a 1.png",
+    "./pictures/Realphoto/WhatsApp Image 2026-02-24 at 09.15.07 1.png",
     "./pictures/Realphoto/WhatsApp Image 2026-02-24 at 09.14.54 1.png",
     "./pictures/Realphoto/panda.jpg",
     "./pictures/Realphoto/logo.png"
