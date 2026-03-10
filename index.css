@@ -1991,3 +1991,61 @@ cursor:pointer;
 body{
 user-select:none;
 }
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+}
+@media (max-width:768px){
+
+.container,
+.hero-content,
+.about_blok,
+.steps-section,
+.function,
+.porfolio,
+.gridbox,
+.callall{
+  padding-left:20px !important;
+  padding-right:20px !important;
+  width:100%;
+  margin:auto;
+}
+
+}
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+@media (max-width:768px){
+
+.services{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:40px;
+}
+
+.services > div{
+  width:100%;
+  max-width:420px;
+  text-align:center;
+}
+
+}
+@media (max-width:768px){
+
+.slider-wrapper{
+  padding:120px 0;
+}
+
+.slide img{
+  width:200px !important;
+  height:auto !important;
+}
+
+}
