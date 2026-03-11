@@ -25,7 +25,7 @@
     <script src="./js/scroling.js" defer></script>
     <script src="./js/eror.js" defer></script>
     <script src="./js/scriptgopage.js" defer></script>
-  <script src="./js/filter_logo.js" defer></script>
+    <script src="./js/filter_logo.js" defer></script>
     <script src="./js/dra.js" defer></script>
     <script src="./js/inspact.js" defer></script>
     <script src="./js/rightclick.js" defer></script>
@@ -143,62 +143,78 @@
         </p>
       </div>
 
-       <div class="services">
-        <div class="service-item">
-          <img src="./pictures/Group.png" alt="" />
-        </div>
+      <section class="services-section">
+        <div class="services-map">
+          <img
+            src="./pictures/Group 265.PNG"
+            class="services-bg"
+            alt="services map"
+          />
 
-        <div class="service-item_name">
           <a
             href="./service.html"
-            target="_blank"
-            onclick="goToSection('naming')"
+            onclick="goToSection('name')"
+            class="service s1"
+            data-i18n="menu_nameing"
           >
-            <img src="./pictures/Ellipse 162.png" alt="" />
-            <p data-i18n="menu_nameing">ԱՆՎԱՆԱԿՈՉՈՒՄ</p></a
+            ԱՆՎԱՆԱԿՈՉՈՒՄ
+          </a>
+
+          <a
+            href="./service.html"
+            onclick="goToSection('logo')"
+            class="service s2"
+            data-i18n="menu_logo"
           >
-        </div>
-        <div class="service-item_logo">
-       <a href="./service.html" onclick="goToSection('logo')">
-            <img src="./pictures/Ellipse 162.png" alt="" />
-            <p data-i18n="menu_logo">ԼՈԳՈՅԻ ԴԻԶԱՅՆ</p>
+            ԼՈԳՈՅԻ ԴԻԶԱՅՆ
+          </a>
+
+          <a
+            href="./service.html"
+            onclick="goToSection('interier')"
+            class="service s3"
+            data-i18n="menu_interier"
+          >
+            ԻՆՏԵՐԻԵՐ ԴԻԶԱՅՆ
+          </a>
+
+          <a
+            href="./service.html"
+            onclick="goToSection('uiux')"
+            class="service s4"
+            data-i18n="menu_uiux"
+          >
+            UI / UX ԴԻԶԱՅՆ
+          </a>
+
+          <a
+            href="./service.html"
+            onclick="goToSection('brend')"
+            class="service s5"
+            data-i18n="menu_branding"
+          >
+            ԲՐԵՆԴԱՎՈՐՈՒՄ
+          </a>
+
+          <a
+            href="./service.html"
+            onclick="goToSection('pack')"
+            class="service s6"
+            data-i18n="menu_packing"
+          >
+            ՓԱԹԵԹԱՎՈՐՈՒՄ
+          </a>
+
+          <a
+            href="./service.html"
+            onclick="goToSection('bigbrend')"
+            class="service s7"
+            data-i18n="menu_brandunder"
+          >
+            ՎԵՐԱԲՐԵՆԴԱՎՈՐՈՒՄ ԵՎ ՎԵՐԱՁԵԱՎՈՐՈՒՄ
           </a>
         </div>
-
-        <div><img src="./pictures/Vector.png" alt="" class="vector" /></div>
-        <a href="./service.html " onclick="goToSection('interier')"
-          ><p data-i18n="menu_interier" class="interier">
-            Ինտերիեր Դիզայն <img src="./pictures/Ellipse 162.png" alt="" /></p
-        ></a>
-
-        <a href="./service.html" onclick="goToSection('uiux')">
-          <p data-i18n="menu_uiux" class="ui">
-            UI/UX ԴԻԶԱՅՆ
-            <img src="./pictures/Ellipse 162.png" alt="" />
-          </p>
-        </a>
-        <div class="service-item_brend">
-          <a href="./service.html" onclick="goToSection('branding')">
-            <p data-i18n="menu_branding">ԲՐԵՆԴԱՎՈՐՈՒՄ</p>
-          </a>
-        </div>
-
-        <div class="service-item_pack">
-          <a href="./service.html"  onclick="goToSection('packaging')">
-            <img src="./pictures/Ellipse 162.png" alt="" />
-            <p data-i18n="menu_packing">ՓԱԹԵԹԱՎՈՐՈՒՄ</p>
-          </a>
-        </div>
-
-        <div class="service-item_bigbrend">
-          <a href="./service.html" onclick="goToSection('rebranding')"
-            ><p data-i18n="menu_brandunder">
-              ՎԵՐԱԲՐԵՆԴԱՎՈՐՈՒՄ ԵՎ
-              <img src="./pictures/Ellipse 162.png" alt="" />ՎԵՐԱՁԵԱՎՈՐՈՒՄ
-            </p></a
-          >
-        </div>
-      </div>
+      </section>
     </section>
     <hr />
     <footer class="footer">

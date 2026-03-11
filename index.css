@@ -580,7 +580,7 @@ li a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 45%;
+  width: 145%;
 }
 
 .service-item img {
@@ -2042,6 +2042,91 @@ html, body {
 .slide img{
   width:200px !important;
   height:auto !important;
+}
+
+}
+.services-section{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:100px 20px;
+}
+
+.services-map{
+  position:relative;
+  max-width:1200px;
+  width:100%;
+}
+
+.services-bg{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* service text */
+.service{
+  position:absolute;
+  font-size:28px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+/* hover */
+.service:hover{
+  color:#f4c542;
+  transform:scale(1.05);
+}
+
+/* positions */
+
+.s1{
+  top:580px;
+  left:470px;
+}
+
+.s2{
+  top:730px;
+  left:550px;
+}
+
+.s3{
+  top:312px;
+  left:939px;
+}
+
+.s4{
+  top:450px;
+  left:630px;
+}
+
+.s5{
+  top:830px;
+  left:240px;
+}
+
+.s6{
+  top:910px;
+  left:690px;
+}
+
+.s7{
+  top:1020px;
+  left:580px;
+}
+@media(max-width:768px){
+
+.services-map{
+  text-align:center;
+}
+
+.service{
+  position:static;
+  display:block;
+  margin:15px 0;
+  font-size:18px;
 }
 
 }
