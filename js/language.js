@@ -56,6 +56,14 @@ const translations = {
     menu_team3:
       " Մենք չենք ստեղծում միայն գեղեցիկ դիզայն. Մենք ստեղծում ենք        պատմություններ, որոնք հնչում են, հիշվում և խթանում են ձեր բիզնեսի աճը.        Յուրաքանչյուր նախագիծ մեր համար բացառիկ է. մենք ուսումնասիրում ենք ձեր    տեսլականը, լսում ձեր նպատակները և կյանքի ենք կոչում գաղափարները, որոնք        առանձնանում են և աչքի են ընկնում շուկայում. Մեր թիմը համատեղում է       ստեղծարարություն, նորարարություն և ժամանակակից տեխնոլոգիաներ՝ ստեղծելով        դիզայն, որը միավորում է գեղեցկությունն ու գործնականությունը. Մենք        կենտրոնացած ենք յուրաքանչյուր մանրամասնության վրա, քանի որ գիտենք, որ        մեծ տպավորությունը սկսվում է փոքր իրերից. Ընտրելով BtoB Design Studio         դուք ստանում եք ոչ միայն պրոֆեսիոնալ դիզայն, այլև վստահելի գործընկեր,       որը անմիջապես հասկանում է ձեր բիզնեսի խնդիրները և առաջարկում լուծումներ,  որոնք գործում են: Մենք հավատում ենք, որ լավ դիզայնը փոխում է percept-ի,        ստեղծում արժեք և ապահովում երկարաժամկետ հաջողություն:",
     menu_interier: "Ինտերիեր Դիզայն",
+    menu_grafik: "Գրաֆիկական դիզայներներ",
+    menu_dev: "Ծրագրավորող",
+    menu_devname: "Ալիկ Հակոբյան",
+    menu_servicesall:
+      "Մեր ծառայությունները ստեղծված են՝ օգնելու բիզնեսներին աճել,առանձնանալ  և կառուցել վստահելի բրենդային ներկայություն։",
+    menu_allservice: "Բոլորը",
+    menu_work:
+      "Մեր աշխատանքները ներկայացնում են մեր փորձը, մեր մոտեցումը և մեր կատարած յուրաքանչյուր նախագծի նկատմամբ ունեցած պատասխանատվությունը։",
   },
 
   en: {
@@ -113,6 +121,14 @@ const translations = {
     menu_team3:
       "We don't just create beautiful designs. We create stories that resonate, are remembered, and drive your business growth. Each project is unique to us. We study your vision, listen to your goals, and bring to life ideas that stand out and stand out in the market. Our team combines creativity, innovation, and modern technologies to create designs that combine beauty and practicality. We focus on every detail, because we know that a big impression starts with small things. By choosing BtoB Design Studio, you get not only professional design, but also a trusted partner who immediately understands your business problems and offers solutions that work. We believe that good design changes perception, creates value, and ensures long-term success.",
     menu_interier: "Interior Design",
+    menu_grafik: "Graphic designers",
+    menu_dev: "Programmer",
+    menu_devname: "Alik Hakobyan",
+    menu_servicesall:
+      "Our services are designed to help businesses grow, stand out, and build a trusted brand presence.",
+    menu_allservice: "Everyone",
+    menu_work:
+      "Our work represents our experience, our approach, and the responsibility we take for each project we undertake.",
   },
   ru: {
     menu_home: "ГЛАВНАЯ",
@@ -169,6 +185,14 @@ const translations = {
     menu_team3:
       "Мы не просто создаём красивые дизайны. Мы создаём истории, которые находят отклик, запоминаются и способствуют росту вашего бизнеса. Каждый проект для нас уникален. Мы изучаем ваше видение, прислушиваемся к вашим целям и воплощаем в жизнь идеи, которые выделяются и занимают особое место на рынке. Наша команда сочетает креативность, инновации и современные технологии для создания дизайнов, которые объединяют красоту и практичность. Мы уделяем внимание каждой детали, потому что знаем, что большое впечатление начинается с мелочей. Выбирая BtoB Design Studio, вы получаете не только профессиональный дизайн, но и надёжного партнёра, который сразу понимает проблемы вашего бизнеса и предлагает работающие решения. Мы верим, что хороший дизайн меняет восприятие, создаёт ценность и обеспечивает долгосрочный успех.",
     menu_interier: "Дизайн интерьера",
+    menu_grafik: "Графические дизайнеры",
+    menu_dev: "Программист",
+    menu_devname: "Алик Акобян",
+    menu_servicesall:
+      "Наши услуги призваны помочь компаниям расти, выделяться на фоне конкурентов и создавать заслуживающее доверия присутствие бренда.",
+    menu_allservice: "Каждый",
+    menu_work:
+      "Наша работа отражает наш опыт, наш подход и ответственность, которую мы берем на себя за каждый реализуемый нами проект.",
   },
   fr: {
     menu_home: "MAISON",
@@ -225,6 +249,14 @@ const translations = {
     menu_team3:
       "Nous ne nous contentons pas de créer de beaux designs. Nous créons des histoires qui marquent les esprits, restent gravées dans les mémoires et stimulent la croissance de votre entreprise. Chaque projet est unique. Nous étudions votre vision, nous sommes à l'écoute de vos objectifs et nous donnons vie à des idées qui se démarquent sur le marché. Notre équipe allie créativité, innovation et technologies modernes pour concevoir des designs à la fois esthétiques et fonctionnels. Nous accordons une attention particulière à chaque détail, car nous savons qu'une grande impression se forge à travers les petites attentions. En choisissant BtoB Design Studio, vous bénéficiez non seulement d'un design professionnel, mais aussi d'un partenaire de confiance qui comprend immédiatement vos problématiques et vous propose des solutions efficaces. Nous sommes convaincus qu'un bon design transforme les perceptions, crée de la valeur et garantit un succès durable.",
     menu_interier: "Design d'intérieur",
+    menu_grafik: "Graphistes",
+    menu_dev: "Programmeur",
+    menu_devname: "Alik Hakobyan",
+    menu_servicesall:
+      "Nos services sont conçus pour aider les entreprises à se développer, à se démarquer et à bâtir une image de marque de confiance.",
+    menu_allservice: "Tout le monde",
+    menu_work:
+      "Notre travail reflète notre expérience, notre approche et la responsabilité que nous assumons pour chaque projet que nous entreprenons.",
   },
 
   ger: {
@@ -282,6 +314,14 @@ const translations = {
     menu_team3:
       "Wir kreieren nicht nur ansprechende Designs. Wir entwickeln Geschichten, die nachwirken, im Gedächtnis bleiben und Ihr Unternehmenswachstum fördern. Jedes Projekt ist für uns einzigartig. Wir analysieren Ihre Vision, hören Ihren Zielen zu und erwecken Ideen zum Leben, die sich vom Markt abheben. Unser Team vereint Kreativität, Innovation und moderne Technologien, um Designs zu schaffen, die Schönheit und Funktionalität verbinden. Wir achten auf jedes Detail, denn wir wissen: Ein großer Eindruck entsteht durch Kleinigkeiten. Mit BtoB Design Studio erhalten Sie nicht nur professionelles Design, sondern auch einen vertrauenswürdigen Partner, der Ihre geschäftlichen Herausforderungen sofort versteht und praxiserprobte Lösungen bietet. Wir sind überzeugt: Gutes Design verändert die Wahrnehmung, schafft Mehrwert und sichert langfristigen Erfolg.",
     menu_interier: "Innenarchitektur",
+    menu_grafik: "Grafikdesigner",
+    menu_dev: "Programmierer",
+    menu_devname: "Alik Hakobyan",
+    menu_servicesall:
+      "Unsere Dienstleistungen sind darauf ausgelegt, Unternehmen beim Wachstum zu unterstützen, sie von der Konkurrenz abzuheben und eine vertrauenswürdige Markenpräsenz aufzubauen.",
+    menu_allservice: "Alle",
+    menu_work:
+      "Unsere Arbeit spiegelt unsere Erfahrung, unsere Herangehensweise und die Verantwortung wider, die wir für jedes Projekt übernehmen, das wir in Angriff nehmen.",
   },
 };
 

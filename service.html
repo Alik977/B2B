@@ -128,26 +128,42 @@
       ><img src="./pictures/up-arrow.png" alt="" class="totop"
     /></a>
     <section class="portfolio">
-      <h1>Պորտֆոլիո</h1>
-      <p>
+      <h1 data-i18n="menu_portfolio">Պորտֆոլիո</h1>
+      <p data-i18n="menu_work">
         Մեր աշխատանքները ներկայացնում են մեր փորձը, մեր մոտեցումը և մեր կատարած
         յուրաքանչյուր նախագծի նկատմամբ ունեցած պատասխանատվությունը։
       </p>
 
       <div class="filters">
-        <button data-category="allpic" class="active" id="all">Բոլորը</button>
-        <button data-category="packaging" id="pack">Փաթեթավորում</button>
-        <button data-category="branding" id="brend">Բրենդավորում</button>
-        <button data-category="rebranding" id="bigbrend">
+        <button data-category="allpic" class="active" id="all" data-i18n="menu_allservice">Բոլորը</button>
+        <button data-category="packaging" id="pack" data-i18n="menu_packing">
+          Փաթեթավորում
+        </button>
+        <button data-category="branding" id="brend" data-i18n="menu_branding">
+          Բրենդավորում
+        </button>
+        <button data-category="rebranding" id="bigbrend" data-i18n="menu_brandunder">
           Վերաբրենդավորում
         </button>
-        <button data-category="naming" id="name">Անվանակոչում</button>
-        <button data-category="logo" id="logo">Լոգոյի Դիզայն</button>
-        <button data-category="UI" id="uiux">UI/UX Դիզայն</button>
-        <button data-category="Interier" id="interier">Ինտերիեր Դիզայն</button>
+        <button data-category="naming" id="name" data-i18n="menu_nameing">
+          Անվանակոչում
+        </button>
+        <button data-category="logo" id="logo" data-i18n="menu_logo">
+          Լոգոյի Դիզայն
+        </button>
+        <button data-category="UI" id="uiux" data-i18n="menu_uiux">
+          UI/UX Դիզայն
+        </button>
+        <button
+          data-category="Interier"
+          id="interier"
+          data-i18n="menu_interier"
+        >
+          Ինտերիեր Դիզայն
+        </button>
       </div>
       <script>
-               window.addEventListener("DOMContentLoaded", () => {
+        window.addEventListener("DOMContentLoaded", () => {
           const targetId = localStorage.getItem("activeSection");
           if (targetId) {
             const el = document.getElementById(targetId);
@@ -157,7 +173,6 @@
             localStorage.removeItem("activeSection");
           }
         });
-                
       </script>
       <div class="gridbox">
         <div class="portfolio-grid">
@@ -183,9 +198,9 @@
           <div class="slot p"><img /></div>
         </div>
       </div>
-<br>
-<br>
-<br>
+      <br />
+      <br />
+      <br />
 
       <div class="modal" id="imgModal">
         <span class="close">&times;</span>
