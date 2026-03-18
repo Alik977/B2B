@@ -142,25 +142,25 @@
       /></a>
       <!-- CONTACT INFO -->
       <section class="contact-info">
-        <h1>Կապ մեզ հետ</h1>
+        <h1 data-i18n="menu_contactme">Կապ մեզ հետ</h1>
 
         <div class="info-card">
-          <h3>Կոնտակտային տվյալներ</h3>
+          <h3 data-i18n="menu_contact1">Կոնտակտային տվյալներ</h3>
 
-          <p class="label">Հասցե</p>
-          <p>ՀՀ, Կոտայքի մարզ, գ Քասախ, Վահան Տերյանի 13-րդ փողոց տուն 1</p>
+          <p class="label" data-i18n="menu_contact2">Հասցե</p>
+          <p data-i18n="menu_contact3">ՀՀ, Կոտայքի մարզ, գ Քասախ, Վահան Տերյանի 13-րդ փողոց տուն 1</p>
 
-          <p class="label">Հեռ.</p>
+          <p class="label" data-i18n="menu_contact4">Հեռ.</p>
           <p>(+374) 94 50 50 80<br />(+374) 99 35 35 75</p>
 
-          <p class="label">Էլ․ հասցե</p>
+          <p class="label" data-i18n="menu_contact5">Էլ․ հասցե</p>
           <p>btobdesignstudio@gmail.com</p>
         </div>
       </section>
 
       <!-- FORM -->
       <section class="form-section">
-        <h2>Թողնել հաղորդագրություն</h2>
+        <h2 data-i18n="menu_sms">Թողնել հաղորդագրություն</h2>
 
         <form
           action="mailto:btobdesignstudio@gmail.com"
@@ -168,27 +168,28 @@
           enctype="text/plain"
         >
           <div class="row">
-            <input type="text" name="name" placeholder="Ձեր անունը" required />
-            <input type="email" name="email" placeholder="Էլ․ հասցե" required />
+            <input type="text" name="name" placeholder="Your name" required />
+            <input  data-i18n="menu_contact5" type="email" name="email" placeholder="Email address" required  />
           </div>
 
           <div class="row">
             <input
               type="text"
               name="phone"
-              placeholder="Հեռախոսահամար"
+              placeholder="Phone number"
               required
+              data-i18n="menu_phone"
             />
-            <input type="text" name="subject" placeholder="Թեմա" required />
+            <input type="text" name="subject" placeholder="Subject" required />
           </div>
 
           <textarea
             name="message"
-            placeholder="Ձեր հաղորդագրությունը"
+            placeholder="Your message"
             required
           ></textarea>
 
-          <button type="submit">Ուղարկել</button>
+          <button type="submit" data-i18n="menu_send">Ուղարկել</button>
         </form>
       </section>
 

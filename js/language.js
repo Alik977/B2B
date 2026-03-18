@@ -64,7 +64,11 @@ const translations = {
     menu_allservice: "Բոլորը",
     menu_work:
       "Մեր աշխատանքները ներկայացնում են մեր փորձը, մեր մոտեցումը և մեր կատարած յուրաքանչյուր նախագծի նկատմամբ ունեցած պատասխանատվությունը։",
-  },
+  menu_contactme:"Կապ մեզ հետ",
+    menu_sms:"Թողնել հաղորդագրություն",
+    menu_phone:"Հեռախոսահամար",
+    menu_send:"Ուղարկել",
+    },
 
   en: {
     menu_home: "HOME",
@@ -129,7 +133,11 @@ const translations = {
     menu_allservice: "Everyone",
     menu_work:
       "Our work represents our experience, our approach, and the responsibility we take for each project we undertake.",
-  },
+  menu_contactme:"Contact us",
+    menu_sms:"Leave a message",
+    menu_phone:"Phone number",
+    menu_send:"Send",
+    },
   ru: {
     menu_home: "ГЛАВНАЯ",
     menu_about: "О НАС",
@@ -193,7 +201,11 @@ const translations = {
     menu_allservice: "Каждый",
     menu_work:
       "Наша работа отражает наш опыт, наш подход и ответственность, которую мы берем на себя за каждый реализуемый нами проект.",
-  },
+  menu_contactme:"Связаться с нами",
+  menu_sms:"Оставить сообщение",
+  menu_phone:"Номер телефона",
+  menu_send:"Отправлять",
+    },
   fr: {
     menu_home: "MAISON",
     menu_about: "À PROPOS DE NOUS",
@@ -257,7 +269,11 @@ const translations = {
     menu_allservice: "Tout le monde",
     menu_work:
       "Notre travail reflète notre expérience, notre approche et la responsabilité que nous assumons pour chaque projet que nous entreprenons.",
-  },
+ menu_contactme:"Contactez-nous",
+   menu_sms:"Laissez un message",
+   menu_phone:"Numéro de téléphone",
+   menu_send:"Envoyer",
+    },
 
   ger: {
     menu_home: "STARTSEITE",
@@ -322,7 +338,11 @@ const translations = {
     menu_allservice: "Alle",
     menu_work:
       "Unsere Arbeit spiegelt unsere Erfahrung, unsere Herangehensweise und die Verantwortung wider, die wir für jedes Projekt übernehmen, das wir in Angriff nehmen.",
-  },
+ menu_contactme:"Kontaktieren Sie uns",
+   menu_sms:"Eine Nachricht hinterlassen",
+   menu_phone:"Telefonnummer",
+   menu_send:"Schicken",
+    },
 };
 
 langSelected.addEventListener("click", () => {
