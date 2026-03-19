@@ -2130,3 +2130,126 @@ html, body {
 }
 
 }
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  section {
+    padding: 40px 20px !important;
+  }
+
+  h1 {
+    font-size: 34px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+}
+@media (max-width:768px){
+
+  .navbar{
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.2);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .mobile-menu{
+    width: 80%;
+    border-radius: 20px 0 0 20px;
+  }
+
+}
+@media (max-width:768px){
+
+  .hero{
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-left{
+    text-align: center;
+  }
+
+  .hero-btn{
+    margin: 20px auto;
+    display: block;
+  }
+
+  .socials{
+    justify-content: center;
+  }
+
+}
+@media (max-width:768px){
+
+  .slider-wrapper{
+    padding: 100px 0 !important;
+  }
+
+  .slide{
+    transition: 0.4s ease;
+  }
+
+}
+@media (max-width:768px){
+
+  .services > div{
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+}
+@media (max-width:768px){
+
+  .gridbox{
+    display: flex !important;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .box img{
+    border-radius: 16px;
+  }
+
+}
+@media (max-width:768px){
+
+  .callinfo{
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(15px);
+    border-radius: 18px;
+    padding: 20px;
+  }
+
+}
+@media (max-width:768px){
+
+  .footer{
+    text-align: center;
+  }
+
+  .footer-col ul{
+    padding: 0;
+  }
+
+}
+@media (max-width:768px){
+
+  button:active,
+  a:active{
+    transform: scale(0.96);
+  }
+
+}
