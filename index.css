@@ -557,10 +557,9 @@ li a:hover {
   padding: 71px 0px 0px 121px;
 }
 .function p {
-  width: 877px;
-  height: 93px;
-  font-size: 20px;
-  padding: 30px 0px;
+  max-width: 877px;
+  width: 100%;
+  height: auto;
 }
 .function h2 {
   font-size: 32px;
@@ -577,16 +576,13 @@ li a:hover {
 }
 
 .service-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 145%;
+  width: 100%;
 }
 
 .service-item img {
-  width: 1440px;
-  height: 1393px;
-  padding: 23px 0px 0px 110px;
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
 
 .service-item_name {
@@ -1995,9 +1991,13 @@ html, body {
   overflow-x: hidden;
 }
 
-* {
+img,
+video,
+canvas {
   max-width: 100%;
+  height: auto;
 }
+
 @media (max-width:768px){
 
 .container,
@@ -2250,6 +2250,75 @@ html, body {
   button:active,
   a:active{
     transform: scale(0.96);
+  }
+
+}
+@media (max-width: 768px) {
+
+  .service-item_name,
+  .service-item_logo,
+  .service-item_brend,
+  .service-item_pack,
+  .service-item_bigbrend,
+  .service-item_UI {
+
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+
+    width: 100%;
+    text-align: center;
+
+    margin: 10px 0;
+  }
+
+}
+/* ===== CRITICAL MOBILE FIX ===== */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-item {
+  width: 100%;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.function p {
+  max-width: 877px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .services {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item_name,
+  .service-item_logo,
+  .service-item_brend,
+  .service-item_pack,
+  .service-item_bigbrend,
+  .service-item_UI {
+
+    position: static !important;
+    width: 100%;
+    text-align: center;
   }
 
 }
