@@ -295,7 +295,7 @@ li a:hover {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 75%;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(135deg, #5d49c7, #2c1a73);
   padding: 80px 30px;
@@ -532,6 +532,7 @@ form .row {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+   flex-direction: column;
 }
 
 input,
@@ -770,10 +771,10 @@ footer {
     width: 100%;
     padding: 20px;
   }
-  .function p {
-    width: 300px;
-    align-items: center;
-  }
+ .function p {
+  max-width: 300px;
+  width: 100%;
+}
   .step {
     min-width: 220px;
     height: 260px;
@@ -789,9 +790,10 @@ footer {
     grid-row: auto !important;
   }
   .services {
-    flex-direction: column;
-    width: 50%;
-  }
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 
   .service-item img {
     width: 100%;
@@ -1041,4 +1043,37 @@ button:hover ~ .custom-cursor,
 }
 body{
 user-select:none;
+}
+/* ===== MOBILE FIX ===== */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .services {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .function p {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  form .row {
+    flex-direction: column;
+  }
+
+  .mobile-menu {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
